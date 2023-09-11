@@ -384,7 +384,7 @@ img {
         width: auto;
         font-size: 40px;
         margin-top: 0px;
-        margin-left: 0px;
+        margin-left: 50px;
         color: #ffbf00;
         font-family: 'Rubik Wet Paint', cursive;
     }
@@ -513,16 +513,10 @@ img {
     .container-items {
         display: grid;
         justify-items: center;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
         gap: 20px;
     }
 
-    .item img {
-        width: 300px;
-        height: 300px;
-        border-radius: 20px;
-        transition: all .5s;
-    }
 
     .item:hover img {
         transform: scale(1.2);
@@ -531,7 +525,7 @@ img {
     .info-product h2 {
         display: grid;
         justify-items: center;
-        background-color: #00000088;
+        background-color: #ffbf00;
         color: #ffffff;
     }
 
@@ -546,7 +540,7 @@ img {
 
     .info-product button {
         border: none;
-        background-color: #000;
+        background-color: #ff7b00;
         color: #ffffff;
         padding: 20px 100px;
         margin-bottom: 20px;
@@ -556,55 +550,69 @@ img {
 
     .container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1.8fr 0.2fr;
-        gap: 30px;
-        grid-auto-flow: row;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.2fr 0.2fr 0.2fr 1fr;
+        gap: 20px;
+        grid-auto-flow: column;
         grid-template-areas:
-            "imagenes parrafo1 parrafo1"
-            "imagenes parrafo2 parrafo2"
-            "imagenes parrafo3 parrafo3"
-            "carrusel carrusel carrusel";
+            "imagenes"
+            "parrafo1"
+            "parrafo2"
+            "parrafo3"
+            "carrusel";
     }
 
     .imagenes {
+        width: 300px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
         grid-area: imagenes;
         display: grid;
-        gap: 30px;
+        gap: 10px;
     }
 
     .parrafo1 {
+        border-radius: 20px;
+        background: rgb(233, 242, 8);
+        background: linear-gradient(0deg, rgba(233, 242, 8, 1) 0%, rgba(253, 156, 45, 1) 100%);
         grid-area: parrafo1;
-        color: white;
-        align-self: center;
-        font-size: 110%;
+        color: rgb(0, 0, 0);
+        font-size: 90%;
         text-align: center;
         font-family: 'Noto Sans Meroitic', sans-serif;
     }
 
     .parrafo2 {
+        border-radius: 20px;
+        background: rgb(233, 242, 8);
+        background: linear-gradient(0deg, rgba(233, 242, 8, 1) 0%, rgba(253, 156, 45, 1) 100%);
         grid-area: parrafo2;
-        color: #ffffff;
+        color: #000000;
         align-self: center;
-        font-size: 110%;
-        text-align: center;
+        font-size: 90%;
         font-family: 'Noto Sans Meroitic', sans-serif;
     }
 
     .parrafo3 {
+        border-radius: 20px;
+        background: rgb(233, 242, 8);
+        background: linear-gradient(0deg, rgba(233, 242, 8, 1) 0%, rgba(253, 156, 45, 1) 100%);
         grid-area: parrafo3;
-        color: #ffffff;
+        color: #000000;
         align-self: center;
-        font-size: 110%;
+        font-size: 90%;
         text-align: center;
         font-family: 'Noto Sans Meroitic', sans-serif;
     }
 
     .carrusel {
         grid-area: carrusel;
-        width: 100vh;
-        height: 40vw;
-        margin-left: 50vh;
+        width: auto;
+        height: auto;
+        margin-left: 0px;
     }
 
     .carro img {
@@ -615,8 +623,8 @@ img {
     /* contacto */
 
     .formulario {
-        margin: 10px 0px 10px 0px;
-        width: 50vw;
+        margin: auto;
+        width: 90vw;
         height: 90vh;
         justify-self: center;
         color: #efb810;
@@ -633,8 +641,8 @@ img {
     .redes {
         display: flex;
         justify-content: center;
-        gap: 70px;
-        margin-top: 20px;
+        gap: 40px;
+        margin-top: 80px;
         margin-bottom: 20px;
     }
 
@@ -643,11 +651,11 @@ img {
     }
 
     .imagen-uno {
-        width: 100px;
+        width: 10vw;
     }
 
     .imagen-dos {
-        width: 100px;
+        width: 10vw;
     }
 
 }
