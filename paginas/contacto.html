@@ -20,7 +20,7 @@
     <title>Caiman Fight Club</title>
 </head>
 
-<body class="container-body .containner-fluid">
+<body class="container-body containner-fluid">
     <header class="header">
         <div>
             <img class="logo" src="../Imagenes/logo.png" alt="Logo caiman fight club">
@@ -39,47 +39,76 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section>
-            <h2>Contacto</h2>
+    <main class="main">
+        <h2 class="seccion">Contacto</h2>
+        <form class="row g-3 formulario">
+            <p class="datos"> Dejanos tus datos y nos contactamos.</p>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Fecha de nacimiento</label>
+                <input type="date" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Telefono</label>
+                <input type="tel" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Estilo de pelea</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Muay thai...</option>
+                    <option>Boxeo</option>
+                    <option>Kinboxing</option>
+                    <option>Muay Thai</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Consultas</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Acepto llamadas
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary bg-warning border border-dark">Enviar</button>
+            </div>
+        </form>
+        <section class="redes">
+            <div class="imagen-uno">
+                <a href="https://www.instagram.com/caimanfightclub/"> <img
+                        src="https://icones.pro/wp-content/uploads/2021/02/instagram-logo-icone4.png"
+                        alt="Logo instagram"></a>
+            </div>
+            <div class="imagen-dos">
+                <a href="https://web.whatsapp.com/"> <img
+                        src="https://png.pngtree.com/png-vector/20221018/ourlarge/pngtree-whatsapp-icon-png-image_6315990.png"
+                        alt="Logo instagram"></a>
+            </div>
         </section>
-        <h3 class="instagram"><a href="https://www.instagram.com/caimanfightclub/">Instagram</a></h3>
-        <h3>Horarios</h3>
-        <table border="3" cellpadding="5px">
-            <tr>
-                <th>Lunes</th>
-                <th>Martes</th>
-                <th>Miercoles</th>
-                <th>Jueves</th>
-                <th>Viernes</th>
-                <th>Sabado</th>
-                <th>Domingo</th>
-            </tr>
-            <tr>
-                <td>17:00hs a 19:30</td>
-                <td>9:00 a 11:30</td>
-                <td>17:00hs a 19:30</td>
-                <td>9:00 a 11:30</td>
-                <td>17:00hs a 19:30</td>
-                <td>Cerrado</td>
-                <td>Cerrado</td>
-            </tr>
-            <tr>
-                <td>15:30 a 17:00</td>
-                <td>20:30 a 21:30</td>
-                <td>15:30 a 17:00</td>
-                <td>17:00hs a 19:30</td>
-                <td>20:30 a 21:30</td>
-                <td>Cerrado</td>
-                <td>Cerrado</td>
-            </tr>
-        </table>
     </main>
+    <footer class="footer">
+        <h4 class="pie">©Todos los derechos reservados a Caiman fight club.</h4>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
-<hr>
-<footer>
-    <hr>
-    <h4 class="pie">©tomi_gualtieri</h4>
-</footer>
+</body>
 
 </html>
