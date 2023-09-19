@@ -197,66 +197,48 @@ body {
   margin-bottom: 20px;
 }
 
-.seccion-nosotros .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1.8fr 0.2fr;
-  grid-auto-flow: row;
-  grid-template-areas: "imagenes parrafo1 parrafo1" "imagenes parrafo2 parrafo2" "imagenes parrafo3 parrafo3" "carrusel carrusel carrusel";
+.seccion-nosotros {
+  margin: 5vw;
 }
-.seccion-nosotros .container .imagenes {
-  grid-area: imagenes;
-  margin-top: 5vh;
-  display: grid;
-  gap: 20px;
-  align-items: stretch;
-}
-.seccion-nosotros .container .imagenes .foto1 {
-  order: 2;
-}
-.seccion-nosotros .container .imagenes .foto2 {
-  order: 1;
-}
-.seccion-nosotros .container .imagenes .foto3 {
-  order: -1;
-}
-.seccion-nosotros .container .imagenes img {
-  width: 40vw;
-  height: 50vh;
-}
-.seccion-nosotros .container .parrafo1 p {
-  grid-area: parrafo1;
-  color: white;
-  align-self: center;
-  font-size: 70%;
+.seccion-nosotros .cartas div .div-carta h5 {
   text-align: center;
+  font-size: 4vh;
+  color: #efb810;
   font-family: "Noto Sans Meroitic", sans-serif;
 }
-.seccion-nosotros .container .parrafo2 {
-  grid-area: parrafo2;
-  color: #ffffff;
-  align-self: center;
-  font-size: 110%;
-  text-align: center;
+.seccion-nosotros .cartas div .div-carta p {
   font-family: "Noto Sans Meroitic", sans-serif;
 }
-.seccion-nosotros .container .parrafo3 {
-  grid-area: parrafo3;
-  color: #ffffff;
-  align-self: center;
-  font-size: 110%;
-  text-align: center;
+
+.formulario {
+  margin: 10px 0px 10px 0px;
+  width: 50vw;
+  height: 90vh;
+  justify-self: center;
+  color: #efb810;
+  background-color: rgb(5, 5, 5);
+  border-radius: 5%;
   font-family: "Noto Sans Meroitic", sans-serif;
 }
-.seccion-nosotros .container .carrusel {
-  grid-area: carrusel;
-  width: 100vh;
-  height: 40vw;
-  margin-left: 50vh;
+.formulario .datos {
+  text-align: center;
+  font-size: 2rem;
 }
-.seccion-nosotros .container .carro img {
-  height: 500px;
-  border-radius: 10%;
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.redes .imagen-uno img {
+  width: 80px;
+  border-radius: 20px;
+}
+.redes .imagen-dos img {
+  width: 80px;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=estilo.css.map */

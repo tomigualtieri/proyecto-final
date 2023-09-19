@@ -1,0 +1,36 @@
+.formulario {
+    margin: 10px 0px 10px 0px;
+    width: 50vw;
+    height: 90vh;
+    justify-self: center;
+    color: #efb810;
+    background-color: rgb(5, 5, 5);
+    border-radius: 5%;
+    font-family: 'Noto Sans Meroitic', sans-serif;
+    .datos {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .imagen-uno {
+        img{
+        width: 80px;
+        border-radius: 20px;
+        }
+    }
+    
+    .imagen-dos {
+        img{
+        width: 80px;
+        border-radius: 20px;
+        }
+    }
+}
+
