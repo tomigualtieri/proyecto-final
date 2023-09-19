@@ -1,0 +1,58 @@
+.container-items {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    .item {
+        width: 20vw;
+        border-radius: 5%;
+        height: auto;
+        transition: all .5s;
+        background-color: #000000ea;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+
+        img {
+            margin-top: 2vh;
+            margin-left: 4vh;
+            border-radius: 10px;
+            max-width: 80%;
+            max-height: 80%;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .info-product {
+            display: grid;
+            justify-items: center;
+            h2 {
+                width: 20vw;
+                text-align: center;
+                color: #ffffff;
+            }
+
+            .price {
+                width: 30vh;
+                text-align: center;
+                font-size: 30px;
+                color: #efb810;
+                font-weight: 600;
+            }
+            button {
+                height: 7vh;
+                width: 10vw;
+                border-radius: 5%;
+                border: none;
+                font-size: 2vh;
+                font-weight: 600;
+                background-color: #000;
+                color: #ffffff;
+                margin-bottom: 20px;
+            }
+
+        }
+    }
+}

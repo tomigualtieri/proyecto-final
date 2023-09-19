@@ -1,0 +1,62 @@
+.container-videos {
+    margin-left: 4vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 10px;
+    grid-template-areas:
+        "uno dos tres"
+        "cuatro cinco seis"
+        "siete ocho nueve";
+    .videos{
+        border-radius: 2%;
+        height: 30vh;
+        width: 30vw;
+    }
+    .parrafo-video {
+        border-radius: 2%;
+        background-color: rgba(0, 0, 0, 0.671);
+        color: rgb(255, 255, 255);
+        width: 60vh;
+        text-align: center;
+        font-family: 'Noto Sans Meroitic', sans-serif;
+        font-size: 2.5vh;
+
+    }
+}
+
+.uno {
+    grid-area: uno;
+}
+
+.dos {
+    grid-area: dos;
+}
+
+.tres {
+    grid-area: tres;
+}
+
+.cuatro {
+    grid-area: cuatro;
+}
+
+.cinco {
+    grid-area: cinco;
+}
+
+.seis {
+    grid-area: seis;
+}
+
+.siete {
+    grid-area: siete;
+}
+
+.ocho {
+    grid-area: ocho;
+}
+
+.nueve {
+    grid-area: nueve;
+}
