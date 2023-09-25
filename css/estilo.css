@@ -80,7 +80,7 @@ body hr {
 .main .seccion {
   background-color: #eeda27;
   font-size: 4vh;
-  color: #000000;
+  color: rgb(12, 13, 15);
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
@@ -104,7 +104,7 @@ body hr {
     margin-left: 10px;
     margin-right: 25px;
     color: #eeda27;
-    font-family: "Rubik Wet Paint", cursive;
+    font-family: "Poppins", sans-serif;
   }
   .header .menu .nav-links {
     list-style: none;
@@ -133,7 +133,7 @@ body hr {
   .main .seccion {
     background-color: #eeda27;
     font-size: 4vh;
-    color: #000000;
+    color: rgb(12, 13, 15);
     font-family: "Poppins", sans-serif;
     text-align: center;
   }
@@ -148,6 +148,7 @@ body hr {
 .footer .pie {
   align-content: center;
   font-size: 1.8vh;
+  font-family: "Poppins", sans-serif;
 }
 .footer .logos {
   margin-left: 30px;
@@ -169,6 +170,7 @@ body hr {
   .footer .pie {
     align-content: center;
     font-size: 1.2vh;
+    font-family: "Poppins", sans-serif;
   }
   .footer .logos {
     margin-left: 10px;
@@ -196,7 +198,7 @@ body hr {
 }
 .pelea1 .nombre-peleadores {
   font-size: 4vh;
-  color: rgba(255, 217, 0, 0.87);
+  color: #eeda27;
   text-align: center;
   font-family: "Rubik Wet Paint", cursive;
   font-size: 6vh;
@@ -209,7 +211,7 @@ body hr {
 }
 .pelea2 .nombre-peleadores {
   font-size: 4vh;
-  color: rgba(255, 217, 0, 0.87);
+  color: #eeda27;
   text-align: center;
   font-family: "Rubik Wet Paint", cursive;
   font-size: 6vh;
@@ -225,21 +227,25 @@ body hr {
   font-weight: 700;
   text-align: center;
   margin-top: 30vh;
+  font-family: "Poppins", sans-serif;
 }
 .foto-principal .textoVencedor {
   color: rgba(255, 255, 255, 0.863);
   font-size: 10vh;
   font-weight: 900;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 .foto-principal .boton-verPelea {
   font-size: 4vh;
   margin-left: 60vh;
   color: rgb(255, 217, 0);
+  font-family: "Poppins", sans-serif;
 }
 .foto-principal .boton-verCombate {
   font-size: 4vh;
   color: rgb(255, 217, 0);
+  font-family: "Poppins", sans-serif;
 }
 
 .gif1 {
@@ -307,10 +313,11 @@ body hr {
 }
 
 .parrafo-video {
-  margin-left: 1.5vh;
+  margin-left: 1vh;
   color: white;
-  font-size: 2vh;
+  font-size: 1.8vh;
   font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 
 @media (max-width: 480px) {
@@ -334,9 +341,9 @@ body hr {
   }
   .pelea1 .nombre-peleadores {
     font-size: 4vh;
-    color: rgba(255, 217, 0, 0.87);
+    color: #eeda27;
     text-align: center;
-    font-family: "Rubik Wet Paint", cursive;
+    font-family: "Poppins", sans-serif;
     font-size: 6vh;
   }
   .pelea2 {
@@ -349,9 +356,9 @@ body hr {
   }
   .pelea2 .nombre-peleadores {
     font-size: 4vh;
-    color: rgba(255, 217, 0, 0.87);
+    color: #eeda27;
     text-align: center;
-    font-family: "Rubik Wet Paint", cursive;
+    font-family: "Poppins", sans-serif;
     font-size: 6vh;
   }
   .foto-principal {
@@ -369,24 +376,28 @@ body hr {
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
+    font-family: "Poppins", sans-serif;
   }
   .foto-principal .textoVencedor {
     color: rgba(255, 255, 255, 0.863);
     font-size: 5vh;
     font-weight: 900;
     text-align: center;
+    font-family: "Poppins", sans-serif;
   }
   .foto-principal .boton-verPelea {
     margin-top: 20vw;
     font-size: 4vh;
     color: rgb(255, 255, 255);
     margin-left: 10vw;
+    font-family: "Poppins", sans-serif;
   }
   .foto-principal .boton-verCombate {
     font-size: 4vh;
     color: rgb(255, 255, 255);
     margin-top: 5vw;
     margin-left: 12vw;
+    font-family: "Poppins", sans-serif;
   }
   .gif1 {
     border: 10px groove #e4ab10;
@@ -461,6 +472,7 @@ body hr {
     color: white;
     font-size: 2vh;
     font-weight: 600;
+    font-family: "Poppins", sans-serif;
   }
 }
 .container-items {
@@ -497,13 +509,15 @@ body hr {
   width: 20vw;
   text-align: center;
   color: #ffffff;
+  font-family: "Poppins", sans-serif;
 }
 .container-items .item .info-product .price {
   width: 30vh;
   text-align: center;
   font-size: 30px;
-  color: #efb810;
+  color: #eeda27;
   font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 .container-items .item .info-product button {
   height: 7vh;
@@ -515,6 +529,7 @@ body hr {
   background-color: #000;
   color: #ffffff;
   margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 @media (max-width: 480px) {
@@ -540,6 +555,7 @@ body hr {
     margin-top: 2vh;
     border-radius: 10px;
     transition: all 0.5s;
+    font-family: "Poppins", sans-serif;
   }
   .container-items .item img:hover {
     transform: scale(1.1);
@@ -553,13 +569,15 @@ body hr {
     font-size: 5vw;
     text-align: center;
     color: #ffffff;
+    font-family: "Poppins", sans-serif;
   }
   .container-items .item .info-product .price {
     width: 30vh;
     text-align: center;
     font-size: 5vw;
-    color: #efb810;
+    color: #eeda27;
     font-weight: 600;
+    font-family: "Poppins", sans-serif;
   }
   .container-items .item .info-product button {
     width: 30vw;
@@ -569,6 +587,7 @@ body hr {
     font-weight: 600;
     background-color: #000;
     color: #ffffff;
+    font-family: "Poppins", sans-serif;
   }
 }
 .seccion-nosotros {
@@ -577,11 +596,11 @@ body hr {
 .seccion-nosotros .cartas div .div-carta h5 {
   text-align: center;
   font-size: 4vh;
-  color: #efb810;
-  font-family: "Noto Sans Meroitic", sans-serif;
+  color: rgb(12, 13, 15);
+  font-family: "Poppins", sans-serif;
 }
 .seccion-nosotros .cartas div .div-carta p {
-  font-family: "Noto Sans Meroitic", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .formulario {
@@ -589,17 +608,19 @@ body hr {
   width: 50vw;
   height: 90vh;
   justify-self: center;
-  color: #efb810;
+  color: #eeda27;
   background-color: rgb(5, 5, 5);
   border-radius: 5%;
-  font-family: "Noto Sans Meroitic", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .formulario .datos {
   text-align: center;
   font-size: 2rem;
+  font-family: "Poppins", sans-serif;
 }
 .formulario .botonEnviar {
   transition: all 0.5s;
+  font-family: "Poppins", sans-serif;
 }
 .formulario .botonEnviar:hover {
   transform: scale(1.1, 1.1);
@@ -611,20 +632,22 @@ body hr {
     width: 90vw;
     height: auto;
     justify-self: center;
-    color: #efb810;
+    color: #eeda27;
     background-color: rgb(5, 5, 5);
     border-radius: 5%;
-    font-family: "Noto Sans Meroitic", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   .formulario .datos {
     text-align: center;
     font-size: 2rem;
+    font-family: "Poppins", sans-serif;
   }
   .formulario .botonEnviar {
     margin-left: 35vw;
     margin-bottom: 5vh;
     margin-top: 2vh;
     transition: all 0.5s;
+    font-family: "Poppins", sans-serif;
   }
   .formulario .botonEnviar:hover {
     transform: scale(1.1, 1.1);

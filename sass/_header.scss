@@ -3,7 +3,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    background-color: rgb(12, 13, 15);
+    background-color: $colorFondo;
 
     div {
         .logo {
@@ -19,8 +19,8 @@
         .titulo {
             font-size: 8vh;
             margin-top: 10px;
-            color: #eeda27;
-            font-family: 'Rubik Wet Paint', cursive;
+            color: $colorPrincipal;
+            font-family: $tipografiaTitulo;
         }
     }
 
@@ -38,12 +38,12 @@
                 color: rgb(255, 255, 255);
                 text-decoration: none;
                 display: inline-block;
-                background-color: rgb(12, 13, 15);
+                background-color: $colorFondo;
                 border-radius: 10px;
-                font-family: 'Poppins', sans-serif;
+                font-family: $tipografiaParrafos;
 
                 &:hover {
-                    color: #eeda27;
+                    color: $colorPrincipal;
                 }
             }
         }
@@ -56,10 +56,10 @@
     height: auto;
 
     .seccion {
-        background-color: #eeda27;
+        background-color: $colorPrincipal;
         font-size: 4vh;
-        color: #000000;
-        font-family: 'Poppins', sans-serif;
+        color: $colorFondo;
+        font-family: $tipografiaParrafos;
         text-align: center;
 
     }
@@ -73,14 +73,14 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        background-color: rgb(12, 13, 15);
-    
+        background-color: $colorFondo;
+
         div {
             .logo {
                 display: none;
             }
         }
-    
+
         div {
             .titulo {
                 width: 100%;
@@ -88,17 +88,17 @@
                 margin-top: 5px;
                 margin-left: 10px;
                 margin-right: 25px;
-                color: #eeda27;
-                font-family: 'Rubik Wet Paint', cursive;
+                color: $colorPrincipal;
+                font-family: $tipografiaParrafos
             }
         }
-    
+
         .menu {
             .nav-links {
                 list-style: none;
                 display: flex;
                 gap: 0px;
-    
+
                 .navbar {
                     margin-top: 2vh;
                     padding: 10px;
@@ -106,30 +106,30 @@
                     color: rgb(255, 255, 255);
                     text-decoration: none;
                     display: inline-block;
-                    background-color: rgb(12, 13, 15);
+                    background-color: $colorFondo;
                     border-radius: 10px;
-                    font-family: 'Poppins', sans-serif;
-    
+                    font-family: $tipografiaParrafos;
+
                     &:hover {
-                        color: #eeda27;
+                        color: $colorPrincipal;
                     }
                 }
             }
         }
     }
-    
+
     .main {
         display: grid;
         grid-area: main;
         height: auto;
-    
+
         .seccion {
-            background-color: #eeda27;
+            background-color: $colorPrincipal;
             font-size: 4vh;
-            color: #000000;
-            font-family: 'Poppins', sans-serif;
+            color: $colorFondo;
+            font-family: $tipografiaParrafos;
             text-align: center;
-    
+
         }
     }
 }

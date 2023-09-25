@@ -3,18 +3,20 @@
     width: 50vw;
     height: 90vh;
     justify-self: center;
-    color: #efb810;
+    color: $colorPrincipal;
     background-color: rgb(5, 5, 5);
     border-radius: 5%;
-    font-family: 'Noto Sans Meroitic', sans-serif;
+    font-family: $tipografiaParrafos;
 
     .datos {
         text-align: center;
         font-size: 2rem;
+        font-family: $tipografiaParrafos;
     }
 
     .botonEnviar {
         transition: all 0.5s;
+        font-family: $tipografiaParrafos;
 
         &:hover {
             transform: scale(1.1, 1.1);
@@ -29,14 +31,15 @@
         width: 90vw;
         height: auto;
         justify-self: center;
-        color: #efb810;
+        color: $colorPrincipal;
         background-color: rgb(5, 5, 5);
         border-radius: 5%;
-        font-family: 'Noto Sans Meroitic', sans-serif;
+        font-family: $tipografiaParrafos;
 
         .datos {
             text-align: center;
             font-size: 2rem;
+            font-family: $tipografiaParrafos;
         }
 
         .botonEnviar {
@@ -44,6 +47,7 @@
             margin-bottom: 5vh;
             margin-top: 2vh;
             transition: all 0.5s;
+            font-family: $tipografiaParrafos;
 
             &:hover {
                 transform: scale(1.1, 1.1);

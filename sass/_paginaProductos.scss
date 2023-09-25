@@ -34,14 +34,16 @@
                 width: 20vw;
                 text-align: center;
                 color: #ffffff;
+                font-family: $tipografiaParrafos;
             }
 
             .price {
                 width: 30vh;
                 text-align: center;
                 font-size: 30px;
-                color: #efb810;
+                color: $colorPrincipal;
                 font-weight: 600;
+                font-family: $tipografiaParrafos;
             }
 
             button {
@@ -54,6 +56,7 @@
                 background-color: #000;
                 color: #ffffff;
                 margin-bottom: 20px;
+                font-family: $tipografiaParrafos;
             }
 
         }
@@ -84,6 +87,7 @@
                 margin-top: 2vh;
                 border-radius: 10px;
                 transition: all 0.5s;
+                font-family: $tipografiaParrafos;
 
 
                 &:hover {
@@ -101,14 +105,16 @@
                     font-size: 5vw;
                     text-align: center;
                     color: #ffffff;
+                    font-family: $tipografiaParrafos;
                 }
 
                 .price {
                     width: 30vh;
                     text-align: center;
                     font-size: 5vw;
-                    color: #efb810;
+                    color: $colorPrincipal;
                     font-weight: 600;
+                    font-family: $tipografiaParrafos;
                 }
 
                 button {
@@ -119,6 +125,7 @@
                     font-weight: 600;
                     background-color: #000;
                     color: #ffffff;
+                    font-family: $tipografiaParrafos;
                 }
 
             }
