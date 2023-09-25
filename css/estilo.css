@@ -7,6 +7,9 @@
 body {
   background-color: rgb(12, 13, 15);
 }
+body hr {
+  color: white;
+}
 
 .contenedor-body {
   display: grid;
@@ -17,6 +20,17 @@ body {
   grid-template-areas: "header header header" "main main main" "footer footer footer";
 }
 
+@media (max-width: 480px) {
+  .contenedor-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    --bs-gutter-x: 0;
+    grid-template-areas: "header" "main" "footer";
+  }
+}
 .header {
   grid-area: header;
   display: flex;
@@ -34,7 +48,7 @@ body {
 .header div .titulo {
   font-size: 8vh;
   margin-top: 10px;
-  color: #ff0000;
+  color: #eeda27;
   font-family: "Rubik Wet Paint", cursive;
 }
 .header .menu .nav-links {
@@ -55,7 +69,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .header .menu .nav-links .navbar:hover {
-  color: #ff0000;
+  color: #eeda27;
 }
 
 .main {
@@ -64,45 +78,204 @@ body {
   height: auto;
 }
 .main .seccion {
-  background-color: #930000;
-  font-size: 3vh;
-  color: #ffffff;
+  background-color: #eeda27;
+  font-size: 4vh;
+  color: #000000;
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
+@media (max-width: 480px) {
+  .header {
+    width: 100vw;
+    grid-area: header;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: rgb(12, 13, 15);
+  }
+  .header div .logo {
+    display: none;
+  }
+  .header div .titulo {
+    width: 100%;
+    font-size: 5.5vh;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 25px;
+    color: #eeda27;
+    font-family: "Rubik Wet Paint", cursive;
+  }
+  .header .menu .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 0px;
+  }
+  .header .menu .nav-links .navbar {
+    margin-top: 2vh;
+    padding: 10px;
+    font-size: 2vh;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(12, 13, 15);
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+  }
+  .header .menu .nav-links .navbar:hover {
+    color: #eeda27;
+  }
+  .main {
+    display: grid;
+    grid-area: main;
+    height: auto;
+  }
+  .main .seccion {
+    background-color: #eeda27;
+    font-size: 4vh;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+}
 .footer {
-  background-color: #930000;
   color: #ffffff;
-  display: grid;
+  display: flex;
   grid-area: footer;
-  justify-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .footer .pie {
-  font-size: 1.5vh;
+  align-content: center;
+  font-size: 1.8vh;
+}
+.footer .logos {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+.footer .logos .redes-logos {
+  width: 40px;
+  height: 40px;
 }
 
-.container-videos {
-  margin-left: 4vh;
+@media (max-width: 480px) {
+  .footer {
+    color: #ffffff;
+    display: flex;
+    grid-area: footer;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .pie {
+    align-content: center;
+    font-size: 1.2vh;
+  }
+  .footer .logos {
+    margin-left: 10px;
+    margin-bottom: 9px;
+  }
+  .footer .logos .redes-logos {
+    width: 20px;
+    height: 20px;
+  }
+}
+.containerUno {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 10px;
-  grid-template-areas: "uno dos tres" "cuatro cinco seis" "siete ocho nueve";
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "foto-principal foto-principal foto-principal foto-principal" "foto-principal foto-principal foto-principal foto-principal" "pelea1 pelea1 pelea2 pelea2" "fotopelea1 fotopelea2 gif1 gif1" "fotopelea3 fotopelea4 gif1 gif1" "uno uno dos dos" "tres tres cuatro cuatro" "imagenAncha imagenAncha imagenAncha imagenAncha";
 }
-.container-videos .videos {
-  border-radius: 2%;
-  height: 30vh;
-  width: 30vw;
+
+.pelea1 {
+  margin-top: 4vh;
+  grid-area: pelea1;
+  justify-self: center;
 }
-.container-videos .parrafo-video {
-  border-radius: 2%;
-  background-color: rgba(0, 0, 0, 0.671);
-  color: rgb(255, 255, 255);
-  width: 60vh;
+.pelea1 .nombre-peleadores {
+  font-size: 4vh;
+  color: rgba(255, 217, 0, 0.87);
   text-align: center;
-  font-family: "Noto Sans Meroitic", sans-serif;
-  font-size: 2.5vh;
+  font-family: "Rubik Wet Paint", cursive;
+  font-size: 6vh;
+}
+
+.pelea2 {
+  margin-top: 4vh;
+  grid-area: pelea2;
+  justify-self: center;
+}
+.pelea2 .nombre-peleadores {
+  font-size: 4vh;
+  color: rgba(255, 217, 0, 0.87);
+  text-align: center;
+  font-family: "Rubik Wet Paint", cursive;
+  font-size: 6vh;
+}
+
+.foto-principal {
+  background-image: url(../Imagenes/conor-mcgregor-dustin-poirier-ufc-264-07112021_107a23kefd2ko18fhzg0hwhtua.jpg);
+  grid-area: foto-principal;
+}
+.foto-principal .textoVegas {
+  color: rgba(255, 255, 255, 0.863);
+  font-size: 5vh;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30vh;
+}
+.foto-principal .textoVencedor {
+  color: rgba(255, 255, 255, 0.863);
+  font-size: 10vh;
+  font-weight: 900;
+  text-align: center;
+}
+.foto-principal .boton-verPelea {
+  font-size: 4vh;
+  margin-left: 60vh;
+  color: rgb(255, 217, 0);
+}
+.foto-principal .boton-verCombate {
+  font-size: 4vh;
+  color: rgb(255, 217, 0);
+}
+
+.gif1 {
+  border: 10px groove #e4ab10;
+  grid-area: gif1;
+  align-self: center;
+  justify-self: center;
+}
+
+.fotopelea1 {
+  border: 10px groove #e4ab10;
+  grid-area: fotopelea1;
+  margin-left: 2vh;
+  justify-self: center;
+  align-self: center;
+}
+
+.fotopelea2 {
+  border: 10px groove #e4ab10;
+  grid-area: fotopelea2;
+  justify-self: center;
+  align-self: center;
+}
+
+.fotopelea3 {
+  border: 10px groove #e4ab10;
+  grid-area: fotopelea3;
+  justify-self: center;
+  align-self: center;
+}
+
+.fotopelea4 {
+  border: 10px groove #e4ab10;
+  grid-area: fotopelea4;
+  justify-self: center;
+  align-self: center;
 }
 
 .uno {
@@ -121,26 +294,175 @@ body {
   grid-area: cuatro;
 }
 
-.cinco {
-  grid-area: cinco;
+.imagenAncha {
+  margin-top: 2vh;
+  grid-area: imagenAncha;
+  justify-self: center;
 }
 
-.seis {
-  grid-area: seis;
+.videos {
+  margin-left: 4vh;
+  width: 40vw;
+  height: 40vh;
 }
 
-.siete {
-  grid-area: siete;
+.parrafo-video {
+  margin-left: 1.5vh;
+  color: white;
+  font-size: 2vh;
+  font-weight: 600;
 }
 
-.ocho {
-  grid-area: ocho;
+@media (max-width: 480px) {
+  .containerUno {
+    height: 10px;
+    width: 100%;
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    grid-template-areas: "foto-principal" "pelea1" "pelea2" "fotopelea1" "fotopelea2" "gif1" "fotopelea3" "fotopelea4" "uno" "dos" "tres" "cuatro" "imagenAncha";
+  }
+  .pelea1 {
+    grid-area: pelea1;
+    justify-self: center;
+  }
+  .pelea1 img {
+    width: 100vw;
+  }
+  .pelea1 .nombre-peleadores {
+    font-size: 4vh;
+    color: rgba(255, 217, 0, 0.87);
+    text-align: center;
+    font-family: "Rubik Wet Paint", cursive;
+    font-size: 6vh;
+  }
+  .pelea2 {
+    margin-top: 4vh;
+    grid-area: pelea2;
+    justify-self: center;
+  }
+  .pelea2 img {
+    width: 100vw;
+  }
+  .pelea2 .nombre-peleadores {
+    font-size: 4vh;
+    color: rgba(255, 217, 0, 0.87);
+    text-align: center;
+    font-family: "Rubik Wet Paint", cursive;
+    font-size: 6vh;
+  }
+  .foto-principal {
+    width: 100vw;
+    background-image: url(../Imagenes/Caiman.png);
+    grid-area: foto-principal;
+  }
+  .foto-principal .textoVegas {
+    color: rgba(255, 255, 255, 0.863);
+    font-size: 5vh;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  .foto-principal .textoVencedor {
+    color: rgba(255, 255, 255, 0.863);
+    font-size: 5vh;
+    font-weight: 900;
+    text-align: center;
+  }
+  .foto-principal .boton-verPelea {
+    margin-top: 20vw;
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+    margin-left: 10vw;
+  }
+  .foto-principal .boton-verCombate {
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+    margin-top: 5vw;
+    margin-left: 12vw;
+  }
+  .gif1 {
+    border: 10px groove #e4ab10;
+    grid-area: gif1;
+    align-self: center;
+    justify-self: center;
+  }
+  .gif1 img {
+    width: 80vw;
+  }
+  .fotopelea1 {
+    border: 10px groove #e4ab10;
+    grid-area: fotopelea1;
+    justify-self: center;
+    align-self: center;
+  }
+  .fotopelea1 img {
+    width: 80vw;
+  }
+  .fotopelea2 {
+    border: 10px groove #e4ab10;
+    grid-area: fotopelea2;
+    justify-self: center;
+    align-self: center;
+  }
+  .fotopelea2 img {
+    width: 80vw;
+  }
+  .fotopelea3 {
+    border: 10px groove #e4ab10;
+    grid-area: fotopelea3;
+    justify-self: center;
+    align-self: center;
+  }
+  .fotopelea3 img {
+    width: 80vw;
+  }
+  .fotopelea4 {
+    border: 10px groove #e4ab10;
+    grid-area: fotopelea4;
+  }
+  .fotopelea4 img {
+    width: 80vw;
+  }
+  .uno {
+    grid-area: uno;
+  }
+  .dos {
+    grid-area: dos;
+  }
+  .tres {
+    grid-area: tres;
+  }
+  .cuatro {
+    grid-area: cuatro;
+  }
+  .imagenAncha {
+    grid-area: imagenAncha;
+    justify-self: center;
+  }
+  .imagenAncha img {
+    width: 100vw;
+  }
+  .videos {
+    margin-left: 4vh;
+    width: 90vw;
+    height: 50vh;
+  }
+  .parrafo-video {
+    width: 90vw;
+    margin-left: 5vh;
+    color: white;
+    font-size: 2vh;
+    font-weight: 600;
+  }
 }
-
-.nueve {
-  grid-area: nueve;
-}
-
 .container-items {
   display: grid;
   justify-items: center;
@@ -195,6 +517,60 @@ body {
   margin-bottom: 20px;
 }
 
+@media (max-width: 480px) {
+  .container-items {
+    width: auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .container-items .item {
+    width: 90vw;
+    border-radius: 5%;
+    height: auto;
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0.9176470588);
+    margin-top: 3vh;
+  }
+  .container-items .item img {
+    width: 100vw;
+    margin-left: 9vw;
+    margin-top: 2vh;
+    border-radius: 10px;
+    transition: all 0.5s;
+  }
+  .container-items .item img:hover {
+    transform: scale(1.1);
+  }
+  .container-items .item .info-product {
+    display: grid;
+    justify-items: center;
+  }
+  .container-items .item .info-product h2 {
+    width: 100vw;
+    font-size: 5vw;
+    text-align: center;
+    color: #ffffff;
+  }
+  .container-items .item .info-product .price {
+    width: 30vh;
+    text-align: center;
+    font-size: 5vw;
+    color: #efb810;
+    font-weight: 600;
+  }
+  .container-items .item .info-product button {
+    width: 30vw;
+    border-radius: 5%;
+    border: none;
+    font-size: 3vw;
+    font-weight: 600;
+    background-color: #000;
+    color: #ffffff;
+  }
+}
 .seccion-nosotros {
   margin: 5vw;
 }
@@ -229,28 +605,30 @@ body {
   transform: scale(1.1, 1.1);
 }
 
-.redes {
-  display: flex;
-  justify-content: center;
-  gap: 70px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.redes .imagen-uno img {
-  width: 80px;
-  border-radius: 20px;
-  transition: all 1s;
-}
-.redes .imagen-uno img:hover {
-  transform: scale(1.1, 1.1);
-}
-.redes .imagen-dos img {
-  width: 80px;
-  border-radius: 20px;
-  transition: all 1s;
-}
-.redes .imagen-dos img:hover {
-  transform: scale(1.1, 1.1);
+@media (max-width: 480px) {
+  .formulario {
+    margin: 10px 0px 10px 0px;
+    width: 90vw;
+    height: auto;
+    justify-self: center;
+    color: #efb810;
+    background-color: rgb(5, 5, 5);
+    border-radius: 5%;
+    font-family: "Noto Sans Meroitic", sans-serif;
+  }
+  .formulario .datos {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .formulario .botonEnviar {
+    margin-left: 35vw;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+    transition: all 0.5s;
+  }
+  .formulario .botonEnviar:hover {
+    transform: scale(1.1, 1.1);
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

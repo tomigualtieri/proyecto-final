@@ -7,44 +7,49 @@
     background-color: rgb(5, 5, 5);
     border-radius: 5%;
     font-family: 'Noto Sans Meroitic', sans-serif;
+
     .datos {
         text-align: center;
         font-size: 2rem;
     }
-        .botonEnviar{
+
+    .botonEnviar {
+        transition: all 0.5s;
+
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .formulario {
+        margin: 10px 0px 10px 0px;
+        width: 90vw;
+        height: auto;
+        justify-self: center;
+        color: #efb810;
+        background-color: rgb(5, 5, 5);
+        border-radius: 5%;
+        font-family: 'Noto Sans Meroitic', sans-serif;
+
+        .datos {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .botonEnviar {
+            margin-left: 35vw;
+            margin-bottom: 5vh;
+            margin-top: 2vh;
             transition: all 0.5s;
-            &:hover{
-                transform: scale(1.1 , 1.1);
+
+            &:hover {
+                transform: scale(1.1, 1.1);
             }
         }
-}
-
-.redes {
-    display: flex;
-    justify-content: center;
-    gap: 70px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    .imagen-uno {
-        img{
-        width: 80px;
-        border-radius: 20px;
-        transition: all 1s;
-        &:hover{
-            transform: scale(1.1 , 1.1);
-        }
-        }
     }
-    
-    .imagen-dos {
-        img{
-        width: 80px;
-        border-radius: 20px;
-        transition: all 1s;
-        &:hover{
-            transform: scale(1.1 , 1.1);
-        }
-        }
-    }
-}
 
+
+}

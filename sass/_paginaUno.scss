@@ -1,62 +1,361 @@
-.container-videos {
-    margin-left: 4vh;
+.containerUno {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 10px;
+    width: 100%;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
     grid-template-areas:
-        "uno dos tres"
-        "cuatro cinco seis"
-        "siete ocho nueve";
-    .videos{
-        border-radius: 2%;
-        height: 30vh;
-        width: 30vw;
-    }
-    .parrafo-video {
-        border-radius: 2%;
-        background-color: rgba(0, 0, 0, 0.671);
-        color: rgb(255, 255, 255);
-        width: 60vh;
+        "foto-principal foto-principal foto-principal foto-principal"
+        "foto-principal foto-principal foto-principal foto-principal"
+        "pelea1 pelea1 pelea2 pelea2"
+        "fotopelea1 fotopelea2 gif1 gif1"
+        "fotopelea3 fotopelea4 gif1 gif1"
+        "uno uno dos dos"
+        "tres tres cuatro cuatro"
+        "imagenAncha imagenAncha imagenAncha imagenAncha";
+
+}
+
+.pelea1 {
+    margin-top: 4vh;
+    grid-area: pelea1;
+    justify-self: center;
+
+
+    .nombre-peleadores {
+        font-size: 4vh;
+        color: rgba(255, 217, 0, 0.87);
         text-align: center;
-        font-family: 'Noto Sans Meroitic', sans-serif;
-        font-size: 2.5vh;
+        font-family: 'Rubik Wet Paint', cursive;
+        font-size: 6vh;
+    }
+}
+
+.pelea2 {
+    margin-top: 4vh;
+    grid-area: pelea2;
+    justify-self: center;
+
+    .nombre-peleadores {
+        font-size: 4vh;
+        color: rgba(255, 217, 0, 0.87);
+        text-align: center;
+        font-family: 'Rubik Wet Paint', cursive;
+        font-size: 6vh;
 
     }
+}
+
+.foto-principal {
+    background-image: url(../Imagenes/conor-mcgregor-dustin-poirier-ufc-264-07112021_107a23kefd2ko18fhzg0hwhtua.jpg);
+    grid-area: foto-principal;
+
+    .textoVegas {
+        color: rgba(255, 255, 255, 0.863);
+        font-size: 5vh;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 30vh;
+    }
+
+    .textoVencedor {
+        color: rgba(255, 255, 255, 0.863);
+        font-size: 10vh;
+        font-weight: 900;
+        text-align: center;
+
+    }
+
+    .boton-verPelea {
+        font-size: 4vh;
+        margin-left: 60vh;
+        color: rgb(255, 217, 0);
+    }
+
+    .boton-verCombate {
+        font-size: 4vh;
+        color: rgb(255, 217, 0);
+
+    }
+
+}
+
+.gif1 {
+    border: 10px groove #e4ab10;
+    grid-area: gif1;
+    align-self: center;
+    justify-self: center;
+}
+
+.fotopelea1 {
+    border: 10px groove #e4ab10;
+    grid-area: fotopelea1;
+    margin-left: 2vh;
+    justify-self: center;
+    align-self: center;
+}
+
+.fotopelea2 {
+    border: 10px groove #e4ab10;
+    grid-area: fotopelea2;
+    justify-self: center;
+    align-self: center;
+}
+
+.fotopelea3 {
+    border: 10px groove #e4ab10;
+    grid-area: fotopelea3;
+    justify-self: center;
+    align-self: center;
+}
+
+.fotopelea4 {
+    border: 10px groove #e4ab10;
+    grid-area: fotopelea4;
+    justify-self: center;
+    align-self: center;
 }
 
 .uno {
     grid-area: uno;
+
+
 }
 
 .dos {
     grid-area: dos;
+
 }
 
 .tres {
     grid-area: tres;
+
 }
 
 .cuatro {
     grid-area: cuatro;
+
 }
 
-.cinco {
-    grid-area: cinco;
+.imagenAncha {
+    margin-top: 2vh;
+    grid-area: imagenAncha;
+    justify-self: center;
 }
 
-.seis {
-    grid-area: seis;
+.videos {
+    margin-left: 4vh;
+    width: 40vw;
+    height: 40vh;
+
 }
 
-.siete {
-    grid-area: siete;
+.parrafo-video {
+    margin-left: 1.5vh;
+    color: white;
+    font-size: 2vh;
+    font-weight: 600;
 }
 
-.ocho {
-    grid-area: ocho;
-}
 
-.nueve {
-    grid-area: nueve;
+@media (max-width: 480px) {
+
+    .containerUno {
+        height: 10px;
+        width: 100%;
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        gap: 0px 0px;
+        grid-auto-flow: column;
+        grid-template-areas:
+            "foto-principal"
+            "pelea1"
+            "pelea2"
+            "fotopelea1"
+            "fotopelea2"
+            "gif1"
+            "fotopelea3"
+            "fotopelea4"
+            "uno"
+            "dos" 
+            "tres"
+            "cuatro" 
+            "imagenAncha";
+    
+    }
+    
+    .pelea1 {
+        grid-area: pelea1;
+        justify-self: center;
+        img{
+            width: 100vw;
+        }
+    
+    
+        .nombre-peleadores {
+            font-size: 4vh;
+            color: rgba(255, 217, 0, 0.87);
+            text-align: center;
+            font-family: 'Rubik Wet Paint', cursive;
+            font-size: 6vh;
+        }
+    }
+    
+    .pelea2 {
+        margin-top: 4vh;
+        grid-area: pelea2;
+        justify-self: center;
+        img{
+            width: 100vw;
+        }
+    
+        .nombre-peleadores {
+            font-size: 4vh;
+            color: rgba(255, 217, 0, 0.87);
+            text-align: center;
+            font-family: 'Rubik Wet Paint', cursive;
+            font-size: 6vh;
+    
+        }
+    }
+    
+    .foto-principal {
+        width: 100vw;
+        background-image: url(../Imagenes/Caiman.png);
+        grid-area: foto-principal;
+    
+        .textoVegas {
+            color: rgba(255, 255, 255, 0.863);
+            font-size: 5vh;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 10vh;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-content: center;
+        }
+    
+        .textoVencedor {
+            color: rgba(255, 255, 255, 0.863);
+            font-size: 5vh;
+            font-weight: 900;
+            text-align: center;
+    
+        }
+    
+        .boton-verPelea {
+            margin-top: 20vw;
+            font-size: 4vh;
+            color: rgb(255, 255, 255);
+            margin-left: 10vw;
+        }
+    
+        .boton-verCombate {
+            font-size: 4vh;
+            color: rgb(255, 255, 255);
+            margin-top: 5vw;
+            margin-left: 12vw;
+        }
+    
+    }
+    
+    .gif1 {
+        border: 10px groove #e4ab10;
+        grid-area: gif1;
+        align-self: center;
+        justify-self: center;
+        img{
+            width: 80vw;
+        }
+    }
+    
+    .fotopelea1 {
+        border: 10px groove #e4ab10;
+        grid-area: fotopelea1;
+        justify-self: center;
+        align-self: center;
+        img{
+            width: 80vw;
+        }
+    }
+    
+    .fotopelea2 {
+        border: 10px groove #e4ab10;
+        grid-area: fotopelea2;
+        justify-self: center;
+        align-self: center;
+        img{
+            width: 80vw;
+        }
+    }
+    
+    .fotopelea3 {
+        border: 10px groove #e4ab10;
+        grid-area: fotopelea3;
+        justify-self: center;
+        align-self: center;
+        img{
+            width: 80vw;
+        }
+    }
+    
+    .fotopelea4 {
+        border: 10px groove #e4ab10;
+        grid-area: fotopelea4;
+
+        img{
+            width: 80vw;
+        }
+    }
+    
+    .uno {
+        grid-area: uno;
+    
+    
+    }
+    
+    .dos {
+        grid-area: dos;
+    
+    }
+    
+    .tres {
+        grid-area: tres;
+    
+    }
+    
+    .cuatro {
+        grid-area: cuatro;
+    
+    }
+    
+    .imagenAncha {
+        grid-area: imagenAncha;
+        justify-self: center;
+        img{
+            width: 100vw;
+        }
+    }
+    
+    .videos {
+        margin-left: 4vh;
+        width: 90vw;
+        height: 50vh;
+    
+    }
+    
+    .parrafo-video {
+        width: 90vw;
+        margin-left: 5vh;
+        color: white;
+        font-size: 2vh;
+        font-weight: 600;
+    }
+
+
 }

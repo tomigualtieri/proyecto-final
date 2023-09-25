@@ -1,11 +1,49 @@
 .footer {
-    background-color: #930000;
     color: #ffffff;
-    display: grid;
+    display: flex;
     grid-area: footer;
-    justify-items: center;
-    .pie{
-        font-size: 1.5vh;
+    justify-content: center;
+    align-items: center;
+
+    .pie {
+        align-content: center;
+        font-size: 1.8vh;
+    }
+
+    .logos {
+        margin-left: 30px;
+        margin-bottom: 10px;
+        .redes-logos {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .footer {
+        color: #ffffff;
+        display: flex;
+        grid-area: footer;
+        justify-content: center;
+        align-items: center;
+    
+        .pie {
+            align-content: center;
+            font-size: 1.2vh;
+        }
+    
+        .logos {
+            margin-left: 10px;
+            margin-bottom: 9px;
+            .redes-logos {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    
     }
 
 }
