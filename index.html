@@ -23,38 +23,60 @@
 </head>
 
 <body class="container-body containner-fluid">
-    <header class="header">
-        <div>
-            <img class="logo" src="Imagenes/logo.png" alt="Logo caiman fight club">
-        </div>
-        <div>
-            <h1 class="titulo">Caiman Fight Club</h1>
-        </div>
-        <div class="menu">
-            <nav>
-                <ul class="nav-links">
-                    <li><a class="navbar" href="index.html">Inicio</a></li>
-                    <li><a class="navbar" href="./paginas/productos.html">Productos</a></li>
-                    <li><a class="navbar" href="./paginas/nosotros.html">Nosotros</a></li>
-                    <li><a class="navbar" href="./paginas/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-
+    <header class="header1">
+        <nav class="navbar navbar-dark fixed-top barraDeNavegacion">
+            <div class="container-fluid">
+                <a class="navbar-brand tituloCaiman" href="#">Caiman Fight Club </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class=""><img src="../Imagenes/align-right (1).svg" alt=""></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Caiman Fight Club </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Nosotros
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="./paginas/nosotros.html">Imagenes</a></li>
+                                    <li><a class="dropdown-item" href="./paginas/contacto.html">Contacto</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Carrito de compras<img
+                                                src="../Imagenes/shopping_cart_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                                        </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Ultima pelea..."
+                                aria-label="Search">
+                            <button class="btn btn-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
+    <main>
 
-    <main class="main pagina_uno">
-        <h2 class="seccion animate__animated animate__bounceInLeft">Ultimas novedades</h2>
-
-        <section class="containerUno">
-            <div class="pelea1">
-                <img src="./Imagenes/peleadoresportada2.jpg" alt="imagen de gente peleando">
-                <p class="nombre-peleadores">FIZIEV VS <br> GAMROT</p>
-            </div>
-            <div class="pelea2">
-                <img src="./Imagenes/peladoresportada1.jpg" alt="imagen de gente peleando">
-                <p class="nombre-peleadores">DAWSOON VS <br> GREEN</p>
-            </div>
+        <section class="container-index">
             <div class="foto-principal">
                 <p class="textoVegas">VEGAS 2024</p>
                 <p class="textoVencedor">VENCEDOR DEL AÑO</p>
@@ -65,8 +87,15 @@
                     <button type="button" class="btn btn-outline-light boton-verCombate">Ver combate en vivo</button>
                 </a>
             </div>
-            <div class="gif1">
-                <img src="./Imagenes/top-10-ufc-on-fox-fights-gif.gif" alt="imagen de gente peleando">
+            <div class="textopelea1">
+                <p class="nombre-peleadores">FIZIEV VS <br> GAMROT</p>
+            </div>
+            <div class="textopelea2">
+                <p class="nombre-peleadores">DAWSOON <br> VS GREEN</p>
+            </div>
+            <div class="fotopelea12">
+                <img src="./Imagenes/peleadoresportada2.jpg" alt="imagen de gente peleando">
+                <img src="./Imagenes/peladoresportada1.jpg" alt="imagen de gente peleando">
             </div>
             <div class="fotopelea1">
                 <img src="./Imagenes/fotopelea1.jpg" alt="imagen de gente peleando">
@@ -79,6 +108,19 @@
             </div>
             <div class="fotopelea4">
                 <img src="./Imagenes/fotopelea4.jpg" alt="imagen de gente peleando">
+            </div>
+            <div class="gif1">
+                <img src="./Imagenes/top-10-ufc-on-fox-fights-gif.gif" alt="imagen de gente peleando">
+            </div>
+            <div class="parrafo3">
+                <p>NO TE PIERDAS... <br> DE LAS ULTIMAS PELEAS EN UFC.</p>
+            </div>
+            <div class="parrafo2">
+                <p class="tendenciasParrafo">TENDENCIAS</p>
+                <p class="videos-articulos-galeriaParrafo">VIDEOS, ARTÍCULOS Y GALERÍAS</p>
+            </div>
+            <div class="parrafo1">
+                <p>PELEAS ESTELARES DE LA SEMANA</p>
             </div>
             <div class="video uno">
                 <iframe class="videos" src="https://www.youtube.com/embed/0sfSSDXhv4E" title="YouTube video player"
@@ -116,12 +158,16 @@
                     Ve a
                     Holloway en acción el Sáb. 2 de julio en #UFC276.</p>
             </div>
-            <div class="imagenAncha">
+            <div class="cartelera">
+                <p>Saca tu entrada ya <br> para #UFC CLASICO.</p>
+                <a href="https://www.ufcespanol.com/tickets" target="_blank"><img
+                        src="./Imagenes/091623_NocheUFC_FanExp_SocialAssets_1920x1080.jpg" alt="Entrada para UFC">
+            </div></a>
+            <div class="imagenUFC5">
                 <a href="https://www.ea.com/es-es/games/ufc/ufc-5/buy#Playstation" target="_blank"><img
                         src="./Imagenes/imagenlarga.jpg" alt="imagen de juego de ufc ps5"></a>
             </div>
         </section>
-
     </main>
     <hr>
     <footer class="footer">

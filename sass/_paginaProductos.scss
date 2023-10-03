@@ -1,4 +1,18 @@
-.container-items {
+.productos1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4vw;
+    img{
+        height: 40vh;
+    }
+}
+
+
+
+
+/*.container-items {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
@@ -134,3 +148,5 @@
 
 
 }
+
+*/

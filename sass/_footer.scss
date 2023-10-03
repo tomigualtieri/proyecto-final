@@ -1,5 +1,5 @@
 .footer {
-    color: #ffffff;
+    color:colorFondo;
     display: flex;
     grid-area: footer;
     justify-content: center;
@@ -9,6 +9,7 @@
         align-content: center;
         font-size: 1.8vh;
         font-family: $tipografiaParrafos;
+        font-weight: 900;
     }
 
     .logos {

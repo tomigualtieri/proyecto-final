@@ -6,9 +6,10 @@
 }
 
 body {
-    background-color: rgb(12, 13, 15);
+    background-color: #fafafa;
+
     hr {
-        color: white;
+        color: #191919;
     }
 
 }
@@ -27,6 +28,7 @@ body {
 
 @media (max-width: 480px) {
     .contenedor-body {
+
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
@@ -37,5 +39,5 @@ body {
             "header"
             "main"
             "footer";
-    } 
+    }
 }

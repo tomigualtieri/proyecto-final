@@ -1,55 +1,19 @@
-.header {
-    grid-area: header;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    background-color: $colorFondo;
-
-    div {
-        .logo {
-            height: 10vh;
-            width: 8vw;
-            border-radius: 10%;
-            margin-top: 1vh;
-            margin-left: 1vh;
-        }
-    }
-
-    div {
-        .titulo {
-            font-size: 8vh;
-            margin-top: 10px;
-            color: $colorPrincipal;
-            font-family: $tipografiaTitulo;
-        }
-    }
-
-    .menu {
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 10px;
-
-            .navbar {
-                margin-top: 2vh;
-                margin-right: 10px;
-                padding: 15px;
-                font-size: 2vh;
-                color: rgb(255, 255, 255);
-                text-decoration: none;
-                display: inline-block;
-                background-color: $colorFondo;
-                border-radius: 10px;
-                font-family: $tipografiaParrafos;
-
-                &:hover {
-                    color: $colorPrincipal;
-                }
-            }
-        }
-    }
+header{
+    margin-bottom: 10.5vh;
+.logoCaiman{
+    height: 9vh;
+    border-radius: 10%;
 }
-
+.barraDeNavegacion{
+    background-color:$colorFondo ;
+}
+.tituloCaiman{
+    font-family: $tipografiaTitulo;
+    font-size: 5vh;
+    color: red;
+    margin-left: 3vw;
+}
+}
 .main {
     display: grid;
     grid-area: main;
@@ -57,79 +21,11 @@
 
     .seccion {
         background-color: $colorPrincipal;
-        font-size: 4vh;
+        font-size: 5vh;
         color: $colorFondo;
         font-family: $tipografiaParrafos;
         text-align: center;
+        font-weight: 500;
 
-    }
-}
-
-@media (max-width: 480px) {
-
-    .header {
-        width: 100vw;
-        grid-area: header;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        background-color: $colorFondo;
-
-        div {
-            .logo {
-                display: none;
-            }
-        }
-
-        div {
-            .titulo {
-                width: 100%;
-                font-size: 5.5vh;
-                margin-top: 5px;
-                margin-left: 10px;
-                margin-right: 25px;
-                color: $colorPrincipal;
-                font-family: $tipografiaParrafos
-            }
-        }
-
-        .menu {
-            .nav-links {
-                list-style: none;
-                display: flex;
-                gap: 0px;
-
-                .navbar {
-                    margin-top: 2vh;
-                    padding: 10px;
-                    font-size: 2vh;
-                    color: rgb(255, 255, 255);
-                    text-decoration: none;
-                    display: inline-block;
-                    background-color: $colorFondo;
-                    border-radius: 10px;
-                    font-family: $tipografiaParrafos;
-
-                    &:hover {
-                        color: $colorPrincipal;
-                    }
-                }
-            }
-        }
-    }
-
-    .main {
-        display: grid;
-        grid-area: main;
-        height: auto;
-
-        .seccion {
-            background-color: $colorPrincipal;
-            font-size: 4vh;
-            color: $colorFondo;
-            font-family: $tipografiaParrafos;
-            text-align: center;
-
-        }
     }
 }

@@ -5,10 +5,10 @@
 }
 
 body {
-  background-color: rgb(12, 13, 15);
+  background-color: #fafafa;
 }
 body hr {
-  color: white;
+  color: #191919;
 }
 
 .contenedor-body {
@@ -31,45 +31,21 @@ body hr {
     grid-template-areas: "header" "main" "footer";
   }
 }
-.header {
-  grid-area: header;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  background-color: rgb(12, 13, 15);
+header {
+  margin-bottom: 10.5vh;
 }
-.header div .logo {
-  height: 10vh;
-  width: 8vw;
+header .logoCaiman {
+  height: 9vh;
   border-radius: 10%;
-  margin-top: 1vh;
-  margin-left: 1vh;
 }
-.header div .titulo {
-  font-size: 8vh;
-  margin-top: 10px;
-  color: #eeda27;
+header .barraDeNavegacion {
+  background-color: rgb(0, 0, 0);
+}
+header .tituloCaiman {
   font-family: "Rubik Wet Paint", cursive;
-}
-.header .menu .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-}
-.header .menu .nav-links .navbar {
-  margin-top: 2vh;
-  margin-right: 10px;
-  padding: 15px;
-  font-size: 2vh;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  display: inline-block;
-  background-color: rgb(12, 13, 15);
-  border-radius: 10px;
-  font-family: "Poppins", sans-serif;
-}
-.header .menu .nav-links .navbar:hover {
-  color: #eeda27;
+  font-size: 5vh;
+  color: red;
+  margin-left: 3vw;
 }
 
 .main {
@@ -78,68 +54,16 @@ body hr {
   height: auto;
 }
 .main .seccion {
-  background-color: #eeda27;
-  font-size: 4vh;
-  color: rgb(12, 13, 15);
+  background-color: #ff0000;
+  font-size: 5vh;
+  color: rgb(0, 0, 0);
   font-family: "Poppins", sans-serif;
   text-align: center;
+  font-weight: 500;
 }
 
-@media (max-width: 480px) {
-  .header {
-    width: 100vw;
-    grid-area: header;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    background-color: rgb(12, 13, 15);
-  }
-  .header div .logo {
-    display: none;
-  }
-  .header div .titulo {
-    width: 100%;
-    font-size: 5.5vh;
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 25px;
-    color: #eeda27;
-    font-family: "Poppins", sans-serif;
-  }
-  .header .menu .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 0px;
-  }
-  .header .menu .nav-links .navbar {
-    margin-top: 2vh;
-    padding: 10px;
-    font-size: 2vh;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    display: inline-block;
-    background-color: rgb(12, 13, 15);
-    border-radius: 10px;
-    font-family: "Poppins", sans-serif;
-  }
-  .header .menu .nav-links .navbar:hover {
-    color: #eeda27;
-  }
-  .main {
-    display: grid;
-    grid-area: main;
-    height: auto;
-  }
-  .main .seccion {
-    background-color: #eeda27;
-    font-size: 4vh;
-    color: rgb(12, 13, 15);
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-  }
-}
 .footer {
-  color: #ffffff;
+  color: colorFondo;
   display: flex;
   grid-area: footer;
   justify-content: center;
@@ -149,6 +73,7 @@ body hr {
   align-content: center;
   font-size: 1.8vh;
   font-family: "Poppins", sans-serif;
+  font-weight: 900;
 }
 .footer .logos {
   margin-left: 30px;
@@ -181,47 +106,23 @@ body hr {
     height: 20px;
   }
 }
-.containerUno {
+main .container-index {
+  width: 99vw;
+  height: 550vh;
   display: grid;
-  width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "foto-principal foto-principal foto-principal foto-principal" "foto-principal foto-principal foto-principal foto-principal" "pelea1 pelea1 pelea2 pelea2" "fotopelea1 fotopelea2 gif1 gif1" "fotopelea3 fotopelea4 gif1 gif1" "uno uno dos dos" "tres tres cuatro cuatro" "imagenAncha imagenAncha imagenAncha imagenAncha";
+  grid-template-areas: "foto-principal foto-principal foto-principal foto-principal" "parrafo1 parrafo1 parrafo1 parrafo1" "textopelea1 fotopelea12 fotopelea12 textopelea2" "parrafo2 parrafo2 parrafo2 parrafo2" "fotopelea1 fotopelea2 gif1 gif1" "fotopelea3 fotopelea4 gif1 gif1" "cartelera cartelera cartelera cartelera" "cartelera cartelera cartelera cartelera" "parrafo3 parrafo3 parrafo3 parrafo3" "uno uno dos dos" "tres tres cuatro cuatro" "imagenUFC5 imagenUFC5 imagenUFC5 imagenUFC5";
 }
-
-.pelea1 {
-  margin-top: 4vh;
-  grid-area: pelea1;
-  justify-self: center;
-}
-.pelea1 .nombre-peleadores {
-  font-size: 4vh;
-  color: #eeda27;
-  text-align: center;
-  font-family: "Rubik Wet Paint", cursive;
-  font-size: 6vh;
-}
-
-.pelea2 {
-  margin-top: 4vh;
-  grid-area: pelea2;
-  justify-self: center;
-}
-.pelea2 .nombre-peleadores {
-  font-size: 4vh;
-  color: #eeda27;
-  text-align: center;
-  font-family: "Rubik Wet Paint", cursive;
-  font-size: 6vh;
-}
-
-.foto-principal {
-  background-image: url(../Imagenes/conor-mcgregor-dustin-poirier-ufc-264-07112021_107a23kefd2ko18fhzg0hwhtua.jpg);
+main .foto-principal {
   grid-area: foto-principal;
+  background-image: url(../Imagenes/conor-mcgregor-dustin-poirier-ufc-264-07112021_107a23kefd2ko18fhzg0hwhtua.jpg);
+  width: 99vw;
+  height: 100vh;
 }
-.foto-principal .textoVegas {
+main .foto-principal .textoVegas {
   color: rgba(255, 255, 255, 0.863);
   font-size: 5vh;
   font-weight: 700;
@@ -229,374 +130,374 @@ body hr {
   margin-top: 30vh;
   font-family: "Poppins", sans-serif;
 }
-.foto-principal .textoVencedor {
+main .foto-principal .textoVencedor {
   color: rgba(255, 255, 255, 0.863);
   font-size: 10vh;
   font-weight: 900;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
-.foto-principal .boton-verPelea {
+main .foto-principal .boton-verPelea {
+  margin-top: 5vh;
+  margin-left: 27vw;
   font-size: 4vh;
-  margin-left: 60vh;
-  color: rgb(255, 217, 0);
+  color: #ff0000;
   font-family: "Poppins", sans-serif;
 }
-.foto-principal .boton-verCombate {
+main .foto-principal .boton-verCombate {
+  margin-top: 5vh;
   font-size: 4vh;
-  color: rgb(255, 217, 0);
+  color: rgb(255, 0, 0);
   font-family: "Poppins", sans-serif;
 }
-
-.gif1 {
-  border: 10px groove #e4ab10;
-  grid-area: gif1;
-  align-self: center;
+main .fotopelea12 {
+  grid-area: fotopelea12;
   justify-self: center;
 }
-
-.fotopelea1 {
-  border: 10px groove #e4ab10;
+main .fotopelea12 img {
+  width: 24vw;
+}
+main .textopelea1 {
+  grid-area: textopelea1;
+  justify-self: end;
+}
+main .textopelea1 .nombre-peleadores {
+  margin-top: 8vh;
+  font-size: 5vh;
+  font-family: "Rubik Wet Paint", cursive;
+  color: #191919;
+}
+main .textopelea2 {
+  grid-area: textopelea2;
+  justify-self: start;
+}
+main .textopelea2 .nombre-peleadores {
+  margin-top: 8vh;
+  font-size: 5vh;
+  font-family: "Rubik Wet Paint", cursive;
+  color: #191919;
+}
+main .fotopelea1 {
   grid-area: fotopelea1;
-  margin-left: 2vh;
   justify-self: center;
-  align-self: center;
 }
-
-.fotopelea2 {
-  border: 10px groove #e4ab10;
+main .fotopelea1 img {
+  width: 20vw;
+  transition: all 0.3s;
+}
+main .fotopelea1 img:hover {
+  transform: scale(1.1);
+}
+main .fotopelea2 {
   grid-area: fotopelea2;
   justify-self: center;
-  align-self: center;
 }
-
-.fotopelea3 {
-  border: 10px groove #e4ab10;
+main .fotopelea2 img {
+  width: 20vw;
+  transition: all 0.3s;
+}
+main .fotopelea2 img:hover {
+  transform: scale(1.1);
+}
+main .fotopelea3 {
   grid-area: fotopelea3;
   justify-self: center;
-  align-self: center;
+  margin-bottom: 2vh;
 }
-
-.fotopelea4 {
-  border: 10px groove #e4ab10;
+main .fotopelea3 img {
+  width: 20vw;
+  transition: all 0.3s;
+}
+main .fotopelea3 img:hover {
+  transform: scale(1.1);
+}
+main .fotopelea4 {
+  margin-top: 2vh;
   grid-area: fotopelea4;
   justify-self: center;
-  align-self: center;
 }
-
-.uno {
+main .fotopelea4 img {
+  width: 20vw;
+  transition: all 0.3s;
+}
+main .fotopelea4 img:hover {
+  transform: scale(1.1);
+}
+main .gif1 {
+  grid-area: gif1;
+  justify-self: center;
+  margin-top: 10vh;
+}
+main .gif1 img {
+  width: 40vw;
+  transition: all 0.3s;
+}
+main .gif1 img:hover {
+  transform: scale(1.1);
+}
+main .parrafo3 {
+  grid-area: parrafo3;
+  text-align: center;
+}
+main .parrafo3 p {
+  font-size: 4vw;
+  color: #191919;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+main .parrafo2 {
+  margin-top: 20vh;
+  grid-area: parrafo2;
+  text-align: center;
+  margin-bottom: 7vh;
+}
+main .parrafo2 .tendenciasParrafo {
+  font-size: 1vw;
+  color: red;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+main .parrafo2 .videos-articulos-galeriaParrafo {
+  font-size: 4vw;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  color: #191919;
+}
+main .parrafo1 {
+  grid-area: parrafo1;
+  height: 6vh;
+  width: 70vw;
+  margin-left: 15vw;
+  text-align: center;
+  margin-top: 10vh;
+}
+main .parrafo1 p {
+  font-size: 4vw;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+main .uno {
   grid-area: uno;
-}
-
-.dos {
-  grid-area: dos;
-}
-
-.tres {
-  grid-area: tres;
-}
-
-.cuatro {
-  grid-area: cuatro;
-}
-
-.imagenAncha {
-  margin-top: 2vh;
-  grid-area: imagenAncha;
   justify-self: center;
 }
-
-.videos {
-  margin-left: 4vh;
+main .dos {
+  grid-area: dos;
+  justify-self: center;
+}
+main .tres {
+  grid-area: tres;
+  justify-self: center;
+}
+main .cuatro {
+  grid-area: cuatro;
+  justify-self: center;
+}
+main .cartelera {
+  display: flex;
+  justify-content: space-between;
+  grid-area: cartelera;
+  background-image: url(../Imagenes/entrada.png);
+  height: 35vh;
+  width: 99vw;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+main .cartelera img {
+  height: 30vh;
+  margin-top: 2.5vh;
+  margin-right: 2vw;
+  transition: all 0.3s;
+}
+main .cartelera img:hover {
+  transform: scale(1.1);
+}
+main .cartelera P {
+  color: white;
+  font-size: 5vh;
+  font-family: "Poppins", sans-serif;
+  margin-left: 10vw;
+  margin-top: 8vh;
+}
+main .imagenUFC5 {
+  width: 99vw;
+  grid-area: imagenUFC5;
+  justify-self: center;
+  margin-top: 20vh;
+}
+main .imagenUFC5 img {
+  width: 99vw;
+  height: 35vh;
+}
+main .videos {
   width: 40vw;
+  height: 35vh;
+}
+main .parrafo-video {
+  text-align: center;
+  width: 40vw;
+  color: #191919;
+  font-size: 1vw;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.productos1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4vw;
+}
+.productos1 img {
   height: 40vh;
 }
 
-.parrafo-video {
-  margin-left: 1vh;
-  color: white;
-  font-size: 1.8vh;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
+/*.container-items {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    .item {
+        width: 20vw;
+        border-radius: 5%;
+        height: auto;
+        transition: all .5s;
+        background-color: #000000ea;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+
+        img {
+            margin-top: 2vh;
+            margin-left: 4vh;
+            border-radius: 10px;
+            max-width: 80%;
+            max-height: 80%;
+            transition: all 0.5s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .info-product {
+            display: grid;
+            justify-items: center;
+
+            h2 {
+                width: 20vw;
+                text-align: center;
+                color: #ffffff;
+                font-family: $tipografiaParrafos;
+            }
+
+            .price {
+                width: 30vh;
+                text-align: center;
+                font-size: 30px;
+                color: $colorPrincipal;
+                font-weight: 600;
+                font-family: $tipografiaParrafos;
+            }
+
+            button {
+                height: 7vh;
+                width: 10vw;
+                border-radius: 5%;
+                border: none;
+                font-size: 2vh;
+                font-weight: 600;
+                background-color: #000;
+                color: #ffffff;
+                margin-bottom: 20px;
+                font-family: $tipografiaParrafos;
+            }
+
+        }
+    }
 }
 
 @media (max-width: 480px) {
-  .containerUno {
-    height: 10px;
-    width: 100%;
-    display: grid;
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: column;
-    grid-template-areas: "foto-principal" "pelea1" "pelea2" "fotopelea1" "fotopelea2" "gif1" "fotopelea3" "fotopelea4" "uno" "dos" "tres" "cuatro" "imagenAncha";
-  }
-  .pelea1 {
-    grid-area: pelea1;
-    justify-self: center;
-  }
-  .pelea1 img {
-    width: 100vw;
-  }
-  .pelea1 .nombre-peleadores {
-    font-size: 4vh;
-    color: #eeda27;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 6vh;
-  }
-  .pelea2 {
-    margin-top: 4vh;
-    grid-area: pelea2;
-    justify-self: center;
-  }
-  .pelea2 img {
-    width: 100vw;
-  }
-  .pelea2 .nombre-peleadores {
-    font-size: 4vh;
-    color: #eeda27;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 6vh;
-  }
-  .foto-principal {
-    width: 100vw;
-    background-image: url(../Imagenes/Caiman.png);
-    grid-area: foto-principal;
-  }
-  .foto-principal .textoVegas {
-    color: rgba(255, 255, 255, 0.863);
-    font-size: 5vh;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 10vh;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-    font-family: "Poppins", sans-serif;
-  }
-  .foto-principal .textoVencedor {
-    color: rgba(255, 255, 255, 0.863);
-    font-size: 5vh;
-    font-weight: 900;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-  }
-  .foto-principal .boton-verPelea {
-    margin-top: 20vw;
-    font-size: 4vh;
-    color: rgb(255, 255, 255);
-    margin-left: 10vw;
-    font-family: "Poppins", sans-serif;
-  }
-  .foto-principal .boton-verCombate {
-    font-size: 4vh;
-    color: rgb(255, 255, 255);
-    margin-top: 5vw;
-    margin-left: 12vw;
-    font-family: "Poppins", sans-serif;
-  }
-  .gif1 {
-    border: 10px groove #e4ab10;
-    grid-area: gif1;
-    align-self: center;
-    justify-self: center;
-  }
-  .gif1 img {
-    width: 80vw;
-  }
-  .fotopelea1 {
-    border: 10px groove #e4ab10;
-    grid-area: fotopelea1;
-    justify-self: center;
-    align-self: center;
-  }
-  .fotopelea1 img {
-    width: 80vw;
-  }
-  .fotopelea2 {
-    border: 10px groove #e4ab10;
-    grid-area: fotopelea2;
-    justify-self: center;
-    align-self: center;
-  }
-  .fotopelea2 img {
-    width: 80vw;
-  }
-  .fotopelea3 {
-    border: 10px groove #e4ab10;
-    grid-area: fotopelea3;
-    justify-self: center;
-    align-self: center;
-  }
-  .fotopelea3 img {
-    width: 80vw;
-  }
-  .fotopelea4 {
-    border: 10px groove #e4ab10;
-    grid-area: fotopelea4;
-  }
-  .fotopelea4 img {
-    width: 80vw;
-  }
-  .uno {
-    grid-area: uno;
-  }
-  .dos {
-    grid-area: dos;
-  }
-  .tres {
-    grid-area: tres;
-  }
-  .cuatro {
-    grid-area: cuatro;
-  }
-  .imagenAncha {
-    grid-area: imagenAncha;
-    justify-self: center;
-  }
-  .imagenAncha img {
-    width: 100vw;
-  }
-  .videos {
-    margin-left: 4vh;
-    width: 90vw;
-    height: 50vh;
-  }
-  .parrafo-video {
-    width: 90vw;
-    margin-left: 5vh;
-    color: white;
-    font-size: 2vh;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-  }
-}
-.container-items {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-.container-items .item {
-  width: 20vw;
-  border-radius: 5%;
-  height: auto;
-  transition: all 0.5s;
-  background-color: rgba(0, 0, 0, 0.9176470588);
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-}
-.container-items .item img {
-  margin-top: 2vh;
-  margin-left: 4vh;
-  border-radius: 10px;
-  max-width: 80%;
-  max-height: 80%;
-  transition: all 0.5s;
-}
-.container-items .item img:hover {
-  transform: scale(1.1);
-}
-.container-items .item .info-product {
-  display: grid;
-  justify-items: center;
-}
-.container-items .item .info-product h2 {
-  width: 20vw;
-  text-align: center;
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-}
-.container-items .item .info-product .price {
-  width: 30vh;
-  text-align: center;
-  font-size: 30px;
-  color: #eeda27;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-}
-.container-items .item .info-product button {
-  height: 7vh;
-  width: 10vw;
-  border-radius: 5%;
-  border: none;
-  font-size: 2vh;
-  font-weight: 600;
-  background-color: #000;
-  color: #ffffff;
-  margin-bottom: 20px;
-  font-family: "Poppins", sans-serif;
+
+    .container-items {
+        width: auto;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+
+        .item {
+            width: 90vw;
+            border-radius: 5%;
+            height: auto;
+            transition: all .5s;
+            background-color: #000000ea;
+            margin-top: 3vh;
+
+            img {
+                width: 100vw;
+                margin-left: 9vw;
+                margin-top: 2vh;
+                border-radius: 10px;
+                transition: all 0.5s;
+                font-family: $tipografiaParrafos;
+
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            .info-product {
+                display: grid;
+                justify-items: center;
+
+
+                h2 {
+                    width: 100vw;
+                    font-size: 5vw;
+                    text-align: center;
+                    color: #ffffff;
+                    font-family: $tipografiaParrafos;
+                }
+
+                .price {
+                    width: 30vh;
+                    text-align: center;
+                    font-size: 5vw;
+                    color: $colorPrincipal;
+                    font-weight: 600;
+                    font-family: $tipografiaParrafos;
+                }
+
+                button {
+                    width: 30vw;
+                    border-radius: 5%;
+                    border: none;
+                    font-size: 3vw;
+                    font-weight: 600;
+                    background-color: #000;
+                    color: #ffffff;
+                    font-family: $tipografiaParrafos;
+                }
+
+            }
+        }
+    }
+
+
 }
 
-@media (max-width: 480px) {
-  .container-items {
-    width: auto;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-  }
-  .container-items .item {
-    width: 90vw;
-    border-radius: 5%;
-    height: auto;
-    transition: all 0.5s;
-    background-color: rgba(0, 0, 0, 0.9176470588);
-    margin-top: 3vh;
-  }
-  .container-items .item img {
-    width: 100vw;
-    margin-left: 9vw;
-    margin-top: 2vh;
-    border-radius: 10px;
-    transition: all 0.5s;
-    font-family: "Poppins", sans-serif;
-  }
-  .container-items .item img:hover {
-    transform: scale(1.1);
-  }
-  .container-items .item .info-product {
-    display: grid;
-    justify-items: center;
-  }
-  .container-items .item .info-product h2 {
-    width: 100vw;
-    font-size: 5vw;
-    text-align: center;
-    color: #ffffff;
-    font-family: "Poppins", sans-serif;
-  }
-  .container-items .item .info-product .price {
-    width: 30vh;
-    text-align: center;
-    font-size: 5vw;
-    color: #eeda27;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-  }
-  .container-items .item .info-product button {
-    width: 30vw;
-    border-radius: 5%;
-    border: none;
-    font-size: 3vw;
-    font-weight: 600;
-    background-color: #000;
-    color: #ffffff;
-    font-family: "Poppins", sans-serif;
-  }
-}
+*/
 .seccion-nosotros {
   margin: 5vw;
 }
 .seccion-nosotros .cartas div .div-carta h5 {
   text-align: center;
   font-size: 4vh;
-  color: rgb(12, 13, 15);
+  color: rgb(0, 0, 0);
   font-family: "Poppins", sans-serif;
 }
 .seccion-nosotros .cartas div .div-carta p {
@@ -608,7 +509,7 @@ body hr {
   width: 50vw;
   height: 90vh;
   justify-self: center;
-  color: #eeda27;
+  color: #ff0000;
   background-color: rgb(5, 5, 5);
   border-radius: 5%;
   font-family: "Poppins", sans-serif;
@@ -632,7 +533,7 @@ body hr {
     width: 90vw;
     height: auto;
     justify-self: center;
-    color: #eeda27;
+    color: #ff0000;
     background-color: rgb(5, 5, 5);
     border-radius: 5%;
     font-family: "Poppins", sans-serif;

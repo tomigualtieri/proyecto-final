@@ -1,256 +1,45 @@
-.containerUno {
-    display: grid;
-    width: 100%;
-
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "foto-principal foto-principal foto-principal foto-principal"
-        "foto-principal foto-principal foto-principal foto-principal"
-        "pelea1 pelea1 pelea2 pelea2"
-        "fotopelea1 fotopelea2 gif1 gif1"
-        "fotopelea3 fotopelea4 gif1 gif1"
-        "uno uno dos dos"
-        "tres tres cuatro cuatro"
-        "imagenAncha imagenAncha imagenAncha imagenAncha";
-
-}
-
-.pelea1 {
-    margin-top: 4vh;
-    grid-area: pelea1;
-    justify-self: center;
-
-
-    .nombre-peleadores {
-        font-size: 4vh;
-        color: $colorPrincipal;
-        text-align: center;
-        font-family: $tipografiaTitulo;
-        font-size: 6vh;
-    }
-}
-
-.pelea2 {
-    margin-top: 4vh;
-    grid-area: pelea2;
-    justify-self: center;
-
-    .nombre-peleadores {
-        font-size: 4vh;
-        color: $colorPrincipal;
-        text-align: center;
-        font-family: $tipografiaTitulo;
-        font-size: 6vh;
-
-    }
-}
-
-.foto-principal {
-    background-image: url(../Imagenes/conor-mcgregor-dustin-poirier-ufc-264-07112021_107a23kefd2ko18fhzg0hwhtua.jpg);
-    grid-area: foto-principal;
-
-    .textoVegas {
-        color: rgba(255, 255, 255, 0.863);
-        font-size: 5vh;
-        font-weight: 700;
-        text-align: center;
-        margin-top: 30vh;
-        font-family: $tipografiaParrafos;
-    }
-
-    .textoVencedor {
-        color: rgba(255, 255, 255, 0.863);
-        font-size: 10vh;
-        font-weight: 900;
-        text-align: center;
-        font-family: $tipografiaParrafos;
-
-    }
-
-    .boton-verPelea {
-        font-size: 4vh;
-        margin-left: 60vh;
-        color: rgb(255, 217, 0);
-        font-family: $tipografiaParrafos;
-    }
-
-    .boton-verCombate {
-        font-size: 4vh;
-        color: rgb(255, 217, 0);
-        font-family: $tipografiaParrafos;
-
-    }
-
-}
-
-.gif1 {
-    border: 10px groove #e4ab10;
-    grid-area: gif1;
-    align-self: center;
-    justify-self: center;
-}
-
-.fotopelea1 {
-    border: 10px groove #e4ab10;
-    grid-area: fotopelea1;
-    margin-left: 2vh;
-    justify-self: center;
-    align-self: center;
-}
-
-.fotopelea2 {
-    border: 10px groove #e4ab10;
-    grid-area: fotopelea2;
-    justify-self: center;
-    align-self: center;
-}
-
-.fotopelea3 {
-    border: 10px groove #e4ab10;
-    grid-area: fotopelea3;
-    justify-self: center;
-    align-self: center;
-}
-
-.fotopelea4 {
-    border: 10px groove #e4ab10;
-    grid-area: fotopelea4;
-    justify-self: center;
-    align-self: center;
-}
-
-.uno {
-    grid-area: uno;
-
-
-}
-
-.dos {
-    grid-area: dos;
-
-}
-
-.tres {
-    grid-area: tres;
-
-}
-
-.cuatro {
-    grid-area: cuatro;
-
-}
-
-.imagenAncha {
-    margin-top: 2vh;
-    grid-area: imagenAncha;
-    justify-self: center;
-}
-
-.videos {
-    margin-left: 4vh;
-    width: 40vw;
-    height: 40vh;
-
-}
-
-.parrafo-video {
-    margin-left: 1vh;
-    color: white;
-    font-size: 1.8vh;
-    font-weight: 600;
-    font-family: $tipografiaParrafos;
-}
-
-
-@media (max-width: 480px) {
-
-    .containerUno {
-        height: 10px;
-        width: 100%;
+main {
+    .container-index {
+        width: 99vw;
+        height: 550vh;
         display: grid;
-        height: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 0px 0px;
-        grid-auto-flow: column;
+        grid-auto-flow: row;
         grid-template-areas:
-            "foto-principal"
-            "pelea1"
-            "pelea2"
-            "fotopelea1"
-            "fotopelea2"
-            "gif1"
-            "fotopelea3"
-            "fotopelea4"
-            "uno"
-            "dos"
-            "tres"
-            "cuatro"
-            "imagenAncha";
-
-    }
-
-    .pelea1 {
-        grid-area: pelea1;
-        justify-self: center;
-
-        img {
-            width: 100vw;
-        }
-
-
-        .nombre-peleadores {
-            font-size: 4vh;
-            color: $colorPrincipal;
-            text-align: center;
-            font-family: $tipografiaParrafos;
-            font-size: 6vh;
-        }
-    }
-
-    .pelea2 {
-        margin-top: 4vh;
-        grid-area: pelea2;
-        justify-self: center;
-
-        img {
-            width: 100vw;
-        }
-
-        .nombre-peleadores {
-            font-size: 4vh;
-            color: $colorPrincipal;
-            text-align: center;
-            font-family: $tipografiaParrafos;
-            font-size: 6vh;
-
-        }
+            "foto-principal foto-principal foto-principal foto-principal"
+            "parrafo1 parrafo1 parrafo1 parrafo1"
+            "textopelea1 fotopelea12 fotopelea12 textopelea2"
+            "parrafo2 parrafo2 parrafo2 parrafo2"
+            "fotopelea1 fotopelea2 gif1 gif1"
+            "fotopelea3 fotopelea4 gif1 gif1"
+            "cartelera cartelera cartelera cartelera"
+            "cartelera cartelera cartelera cartelera"
+            "parrafo3 parrafo3 parrafo3 parrafo3"
+            "uno uno dos dos"
+            "tres tres cuatro cuatro"
+            "imagenUFC5 imagenUFC5 imagenUFC5 imagenUFC5";
     }
 
     .foto-principal {
-        width: 100vw;
-        background-image: url(../Imagenes/Caiman.png);
         grid-area: foto-principal;
+        background-image: url(../Imagenes/conor-mcgregor-dustin-poirier-ufc-264-07112021_107a23kefd2ko18fhzg0hwhtua.jpg);
+        width: 99vw;
+        height: 100vh;
 
         .textoVegas {
             color: rgba(255, 255, 255, 0.863);
             font-size: 5vh;
             font-weight: 700;
             text-align: center;
-            margin-top: 10vh;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-content: center;
+            margin-top: 30vh;
             font-family: $tipografiaParrafos;
         }
 
         .textoVencedor {
             color: rgba(255, 255, 255, 0.863);
-            font-size: 5vh;
+            font-size: 10vh;
             font-weight: 900;
             text-align: center;
             font-family: $tipografiaParrafos;
@@ -258,121 +47,258 @@
         }
 
         .boton-verPelea {
-            margin-top: 20vw;
+            margin-top: 5vh;
+            margin-left: 27vw;
             font-size: 4vh;
-            color: rgb(255, 255, 255);
-            margin-left: 10vw;
+            color: #ff0000;
             font-family: $tipografiaParrafos;
         }
 
         .boton-verCombate {
+            margin-top: 5vh;
             font-size: 4vh;
-            color: rgb(255, 255, 255);
-            margin-top: 5vw;
-            margin-left: 12vw;
+            color: rgb(255, 0, 0);
             font-family: $tipografiaParrafos;
+
         }
+
 
     }
 
-    .gif1 {
-        border: 10px groove #e4ab10;
-        grid-area: gif1;
-        align-self: center;
+    .fotopelea12 {
+        grid-area: fotopelea12;
         justify-self: center;
 
         img {
-            width: 80vw;
+            width: 24vw;
+        }
+    }
+
+    .textopelea1 {
+        grid-area: textopelea1;
+        justify-self: end;
+
+        .nombre-peleadores {
+            margin-top: 8vh;
+            font-size: 5vh;
+            font-family: $tipografiaTitulo;
+            color: #191919;
+        }
+    }
+
+    .textopelea2 {
+        grid-area: textopelea2;
+        justify-self: start;
+
+        .nombre-peleadores {
+            margin-top: 8vh;
+            font-size: 5vh;
+            font-family: $tipografiaTitulo;
+            color: #191919;
         }
     }
 
     .fotopelea1 {
-        border: 10px groove #e4ab10;
         grid-area: fotopelea1;
         justify-self: center;
-        align-self: center;
 
         img {
-            width: 80vw;
+            width: 20vw;
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
+
     }
 
     .fotopelea2 {
-        border: 10px groove #e4ab10;
         grid-area: fotopelea2;
         justify-self: center;
-        align-self: center;
 
         img {
-            width: 80vw;
+            width: 20vw;
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
 
     .fotopelea3 {
-        border: 10px groove #e4ab10;
         grid-area: fotopelea3;
         justify-self: center;
-        align-self: center;
+        margin-bottom: 2vh;
 
         img {
-            width: 80vw;
+            width: 20vw;
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
 
     .fotopelea4 {
-        border: 10px groove #e4ab10;
+        margin-top: 2vh;
         grid-area: fotopelea4;
+        justify-self: center;
 
         img {
-            width: 80vw;
+            width: 20vw;
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+
+    .gif1 {
+        grid-area: gif1;
+        justify-self: center;
+        margin-top: 10vh;
+
+        img {
+            width: 40vw;
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+
+    .parrafo3 {
+        grid-area: parrafo3;
+        text-align: center;
+
+        p {
+            font-size: 4vw;
+            color: #191919;
+            font-family: $tipografiaParrafos;
+            font-weight: 900;
+        }
+    }
+
+    .parrafo2 {
+        margin-top: 20vh;
+        grid-area: parrafo2;
+        text-align: center;
+        margin-bottom: 7vh;
+
+        .tendenciasParrafo {
+            font-size: 1vw;
+            color: red;
+            font-family: $tipografiaParrafos;
+            font-weight: 800;
+        }
+
+        .videos-articulos-galeriaParrafo {
+            font-size: 4vw;
+            font-weight: 900;
+            font-family: $tipografiaParrafos;
+            color: #191919;
+        }
+    }
+
+    .parrafo1 {
+        grid-area: parrafo1;
+        height: 6vh;
+        width: 70vw;
+        margin-left: 15vw;
+        text-align: center;
+        margin-top: 10vh;
+
+        p {
+            font-size: 4vw;
+            color: #000000;
+            font-family: $tipografiaParrafos;
+            font-weight: 900;
         }
     }
 
     .uno {
         grid-area: uno;
-
-
+        justify-self: center;
     }
 
     .dos {
         grid-area: dos;
-
+        justify-self: center;
     }
 
     .tres {
         grid-area: tres;
-
+        justify-self: center;
     }
 
     .cuatro {
         grid-area: cuatro;
-
+        justify-self: center;
     }
 
-    .imagenAncha {
-        grid-area: imagenAncha;
-        justify-self: center;
+    .cartelera {
+        display: flex;
+        justify-content: space-between;
+        grid-area: cartelera;
+        background-image: url(../Imagenes/entrada.png);
+        height: 35vh;
+        width: 99vw;
+        margin-top: 20vh;
+        margin-bottom: 20vh;
 
         img {
-            width: 100vw;
+            height: 30vh;
+            margin-top: 2.5vh;
+            margin-right: 2vw;
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+        }
+
+        P {
+            color: white;
+            font-size: 5vh;
+            font-family: $tipografiaParrafos;
+            margin-left: 10vw;
+            margin-top: 8vh;
+        }
+    }
+
+    .imagenUFC5 {
+        width: 99vw;
+        grid-area: imagenUFC5;
+        justify-self: center;
+        margin-top: 20vh;
+
+        img {
+            width: 99vw;
+            height: 35vh;
         }
     }
 
     .videos {
-        margin-left: 4vh;
-        width: 90vw;
-        height: 50vh;
+        width: 40vw;
+        height: 35vh;
 
     }
 
     .parrafo-video {
-        width: 90vw;
-        margin-left: 5vh;
-        color: white;
-        font-size: 2vh;
+        text-align: center;
+        width: 40vw;
+        color: #191919;
+        font-size: 1vw;
         font-weight: 600;
         font-family: $tipografiaParrafos;
     }
-
-
 }
