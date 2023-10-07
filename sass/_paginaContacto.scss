@@ -1,59 +1,63 @@
-.formulario {
-    margin: 10px 0px 10px 0px;
-    width: 50vw;
-    height: 90vh;
-    justify-self: center;
-    color: $colorPrincipal;
-    background-color: rgb(5, 5, 5);
-    border-radius: 5%;
-    font-family: $tipografiaParrafos;
-
-    .datos {
-        text-align: center;
-        font-size: 2rem;
-        font-family: $tipografiaParrafos;
-    }
-
-    .botonEnviar {
-        transition: all 0.5s;
-        font-family: $tipografiaParrafos;
-
-        &:hover {
-            transform: scale(1.1, 1.1);
-        }
-    }
+.containerContacto {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "contacto contacto mapa"
+    "contacto contacto mapa"
+    "contacto contacto mapa";
 }
 
+.contacto {
+  grid-area: contacto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-@media (max-width: 480px) {
-    .formulario {
-        margin: 10px 0px 10px 0px;
-        width: 90vw;
-        height: auto;
-        justify-self: center;
-        color: $colorPrincipal;
-        background-color: rgb(5, 5, 5);
-        border-radius: 5%;
-        font-family: $tipografiaParrafos;
+  h4 {
+    font-size: 2vw;
+    color: $colorDetalles;
+    font-family: $tipografiaTextos;
+    font-weight: 600;
+    margin-bottom: 4vh;
+  }
 
-        .datos {
-            text-align: center;
-            font-size: 2rem;
-            font-family: $tipografiaParrafos;
-        }
+  p {
+    font-size: 1.7vw;
+    color: $colorFondo;
+    font-family: $tipografiaTextos ;
+  }
 
-        .botonEnviar {
-            margin-left: 35vw;
-            margin-bottom: 5vh;
-            margin-top: 2vh;
-            transition: all 0.5s;
-            font-family: $tipografiaParrafos;
+  em {
+    font-weight: 700;
+    font-family: $tipografiaTextos ;
+  }
 
-            &:hover {
-                transform: scale(1.1, 1.1);
-            }
-        }
+  .formulario {
+    width: 30vw;
+    font-family: $tipografiaTextos ;
+
+    input {
+      font-size: 1.1vw;
+      font-family: $tipografiaTextos ;
     }
 
+    label {
+      font-size: 1.3vw;
+      font-family: $tipografiaTextos ;
+      color: $colorFondo;
+      font-weight: 700;
+    }
+  }
+}
+
+.mapa {
+  grid-area: mapa;
+  border: solid $colorDetalles;
+  width: 32vw;
+  height: 50vh;
 
 }

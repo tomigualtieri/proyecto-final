@@ -1,31 +1,32 @@
-header{
-    margin-bottom: 10.5vh;
-.logoCaiman{
-    height: 9vh;
-    border-radius: 10%;
+header {
+    margin-bottom: 10.3vh;
+
+    .barraDeNavegacion {
+        background-color: $colorFondo;
+    }
+
+    .tituloCaiman {
+        font-family: $tipografiaTitulo;
+        font-size: 6vh;
+        color: #f1ad39;
+        margin-left: 2vw;
+    }
 }
-.barraDeNavegacion{
-    background-color:$colorFondo ;
-}
-.tituloCaiman{
-    font-family: $tipografiaTitulo;
-    font-size: 5vh;
-    color: red;
-    margin-left: 3vw;
-}
-}
+
 .main {
     display: grid;
     grid-area: main;
     height: auto;
 
     .seccion {
-        background-color: $colorPrincipal;
         font-size: 5vh;
         color: $colorFondo;
-        font-family: $tipografiaParrafos;
-        text-align: center;
-        font-weight: 500;
+        font-family: $tipografiaTextos;
+        text-align: start;
+        margin-top: 5vh;
+        margin-left: 4vw;
+        margin-bottom: 3vh;
+        font-weight: 900;
 
     }
 }

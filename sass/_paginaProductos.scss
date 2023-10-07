@@ -1,5 +1,4 @@
 .productos1 {
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -7,38 +6,40 @@
     gap: 4vw;
 
     img {
-        height: 40vh;
-    }
-
-    .productos {
-        background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(255, 255, 255));
+        height: 30vh;
     }
 
     .tituloProducto {
-        color: rgb(0, 0, 0);
+        color: $colorFondo;
         text-align: center;
-        font-family: $tipografiaParrafos;
+        font-family: $tipografiaTextos;
         font-size: 1.7vw;
         font-weight: 700;
     }
 
     .precio {
-        color: rgb(3, 35, 141);
+        color: $colorDetalles;
         font-size: 1.5vw;
         text-align: center;
         font-weight: 900;
-        font-family: $tipografiaParrafos;
+        font-family: $tipografiaTextos;
         letter-spacing: 0.1vw;
     }
 
     .botonComprar {
-        margin-left: 5.5vw;
+        margin-left: 4.2vw;
         font-weight: 800;
-        color: rgb(0, 0, 0);
+        color: rgb(238, 238, 238);
     }
 }
 
 .paginacion {
     margin-top: 10vh;
+
+    li {
+        a {
+            color: $colorFondo;
+        }
+    }
 
 }

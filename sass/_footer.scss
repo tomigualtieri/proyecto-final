@@ -5,49 +5,21 @@
     align-items: center;
 
     .pie {
-        color: #000000;
+        color: $colorFondo;
         align-content: center;
         font-size: 1.8vh;
-        font-family: $tipografiaParrafos;
+        font-family: $tipografiaTextos;
         font-weight: 900;
     }
 
     .logos {
-        margin-left: 30px;
-        margin-bottom: 10px;
+        margin-left: 1vw;
+        margin-bottom: 1vh;
+
         .redes-logos {
-            width: 3vw;
-            height: 5vh;
+            width: 1.5vw;
+            height: 3.5vh;
         }
-    }
-
-}
-
-@media (max-width: 480px) {
-
-    .footer {
-        color: #ffffff;
-        display: flex;
-        grid-area: footer;
-        justify-content: center;
-        align-items: center;
-
-        .pie {
-            align-content: center;
-            font-size: 1.2vh;
-            font-family: $tipografiaParrafos;
-        }
-
-        .logos {
-            margin-left: 10px;
-            margin-bottom: 9px;
-
-            .redes-logos {
-                width: 20px;
-                height: 20px;
-            }
-        }
-
     }
 
 }

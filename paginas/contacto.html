@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Meroitic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
@@ -52,12 +55,12 @@
                                     Nosotros
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="./nosotros.html">Imagenes</a></li>
+                                    <li><a class="dropdown-item" href="./luchadores.html">Luchadores</a></li>
                                     <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="./carrito.html">Carrito de compras<img
+                                    <li><a class="dropdown-item" href="./error404.html">Carrito de compras<img
                                                 src="../Imagenes/shopping_cart_FILL0_wght400_GRAD0_opsz24.png" alt="">
                                         </a></li>
                                 </ul>
@@ -75,53 +78,31 @@
     </header>
     <main class="main">
         <h2 class="seccion animate__animated animate__bounceInLeft">Contacto</h2>
-        <form class="row g-3 formulario animate__animated animate__bounce">
-            <p class="datos"> Dejanos tus datos y nos contactamos.</p>
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress" class="form-label">Fecha de nacimiento</label>
-                <input type="date" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress2" class="form-label">Telefono</label>
-                <input type="tel" class="form-control" id="inputAddress2" placeholder="+54 0221....">
-            </div>
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-4">
-                <label for="inputState" class="form-label">Estilo de pelea</label>
-                <select id="inputState" class="form-select">
-                    <option selected>Muay thai...</option>
-                    <option>Boxeo</option>
-                    <option>Kinboxing</option>
-                    <option>Muay Thai</option>
-                </select>
-            </div>
-            <div class="col-md-2">
-                <label for="inputZip" class="form-label">Consultas</label>
-                <input type="text" class="form-control" id="inputZip">
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Acepto llamadas
-                    </label>
+        <div class="containerContacto">
+            <div class="contacto">
+                <h4>SUSCRÍBETE AL UFC NEWSLETTER</h4>
+                <p><em>Email:</em> tomi.meridiano@gmail.com</p>
+                <p><em>Tel:</em> 221-4407231</p>
+                <p><em>Instagram:</em> Tomi_Gualtieri</p>
+                <div class="mb-3 formulario">
+                    <label for="exampleFormControlInput1" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Correo@gmail.com">
+                </div>
+                <div class="mb-3 formulario">
+                    <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
             </div>
-            <div class="col-12 ">
-                <button type="submit" class="btn btn-primary bg-warning border border-dark botonEnviar">Enviar</button>
+            <div class="mapa"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.5482040634547!2d-80.19639357646034!3d25.950055506980217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9ae86ab09a981%3A0x724893b5f0cd667!2sCayman%20Fitness!5e0!3m2!1ses-419!2sar!4v1696556651154!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </form>
+        </div>
+
+
+
     </main>
     <hr>
     <footer class="footer">

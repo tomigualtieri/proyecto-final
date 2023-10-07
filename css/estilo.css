@@ -5,10 +5,10 @@
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #ffffff;
 }
 body hr {
-  color: #191919;
+  color: #000000;
 }
 
 .contenedor-body {
@@ -25,32 +25,17 @@ body hr {
   height: 100vh;
 }
 
-@media (max-width: 480px) {
-  .contenedor-body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    --bs-gutter-x: 0;
-    grid-template-areas: "header" "main" "footer";
-  }
-}
 header {
-  margin-bottom: 10.5vh;
-}
-header .logoCaiman {
-  height: 9vh;
-  border-radius: 10%;
+  margin-bottom: 10.3vh;
 }
 header .barraDeNavegacion {
-  background-color: rgb(0, 0, 0);
+  background-color: #0a293d;
 }
 header .tituloCaiman {
   font-family: "Rubik Wet Paint", cursive;
-  font-size: 5vh;
-  color: red;
-  margin-left: 3vw;
+  font-size: 6vh;
+  color: #f1ad39;
+  margin-left: 2vw;
 }
 
 .main {
@@ -59,12 +44,14 @@ header .tituloCaiman {
   height: auto;
 }
 .main .seccion {
-  background-color: #ff0000;
   font-size: 5vh;
-  color: rgb(0, 0, 0);
+  color: #0a293d;
   font-family: "Poppins", sans-serif;
-  text-align: center;
-  font-weight: 500;
+  text-align: start;
+  margin-top: 5vh;
+  margin-left: 4vw;
+  margin-bottom: 3vh;
+  font-weight: 900;
 }
 
 .footer {
@@ -74,46 +61,23 @@ header .tituloCaiman {
   align-items: center;
 }
 .footer .pie {
-  color: #000000;
+  color: #0a293d;
   align-content: center;
   font-size: 1.8vh;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
 }
 .footer .logos {
-  margin-left: 30px;
-  margin-bottom: 10px;
+  margin-left: 1vw;
+  margin-bottom: 1vh;
 }
 .footer .logos .redes-logos {
-  width: 3vw;
-  height: 5vh;
+  width: 1.5vw;
+  height: 3.5vh;
 }
 
-@media (max-width: 480px) {
-  .footer {
-    color: #ffffff;
-    display: flex;
-    grid-area: footer;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer .pie {
-    align-content: center;
-    font-size: 1.2vh;
-    font-family: "Poppins", sans-serif;
-  }
-  .footer .logos {
-    margin-left: 10px;
-    margin-bottom: 9px;
-  }
-  .footer .logos .redes-logos {
-    width: 20px;
-    height: 20px;
-  }
-}
 main .container-index {
-  width: 99vw;
-  height: 550vh;
+  height: 650vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -124,19 +88,18 @@ main .container-index {
 main .foto-principal {
   grid-area: foto-principal;
   background-image: url(../Imagenes/conor-mcgregor-dustin-poirier-ufc-264-07112021_107a23kefd2ko18fhzg0hwhtua.jpg);
-  width: 99vw;
   height: 100vh;
 }
 main .foto-principal .textoVegas {
-  color: rgba(255, 255, 255, 0.863);
-  font-size: 5vh;
+  color: #f1ad39;
+  font-size: 4vh;
   font-weight: 700;
   text-align: center;
   margin-top: 30vh;
   font-family: "Poppins", sans-serif;
 }
 main .foto-principal .textoVencedor {
-  color: rgba(255, 255, 255, 0.863);
+  color: white;
   font-size: 10vh;
   font-weight: 900;
   text-align: center;
@@ -146,13 +109,13 @@ main .foto-principal .boton-verPelea {
   margin-top: 5vh;
   margin-left: 27vw;
   font-size: 4vh;
-  color: #ff0000;
+  color: #f1ad39;
   font-family: "Poppins", sans-serif;
 }
 main .foto-principal .boton-verCombate {
   margin-top: 5vh;
   font-size: 4vh;
-  color: rgb(255, 0, 0);
+  color: #f1ad39;
   font-family: "Poppins", sans-serif;
 }
 main .fotopelea12 {
@@ -168,9 +131,9 @@ main .textopelea1 {
 }
 main .textopelea1 .nombre-peleadores {
   margin-top: 8vh;
-  font-size: 5vh;
+  font-size: 6vh;
   font-family: "Rubik Wet Paint", cursive;
-  color: #191919;
+  color: #f1ad39;
 }
 main .textopelea2 {
   grid-area: textopelea2;
@@ -178,9 +141,9 @@ main .textopelea2 {
 }
 main .textopelea2 .nombre-peleadores {
   margin-top: 8vh;
-  font-size: 5vh;
+  font-size: 6vh;
   font-family: "Rubik Wet Paint", cursive;
-  color: #191919;
+  color: #f1ad39;
 }
 main .fotopelea1 {
   grid-area: fotopelea1;
@@ -246,7 +209,7 @@ main .parrafo3 {
 }
 main .parrafo3 p {
   font-size: 4vw;
-  color: #191919;
+  color: #0a293d;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
 }
@@ -266,7 +229,7 @@ main .parrafo2 .videos-articulos-galeriaParrafo {
   font-size: 4vw;
   font-weight: 900;
   font-family: "Poppins", sans-serif;
-  color: #191919;
+  color: #0a293d;
 }
 main .parrafo1 {
   grid-area: parrafo1;
@@ -277,8 +240,8 @@ main .parrafo1 {
   margin-top: 10vh;
 }
 main .parrafo1 p {
-  font-size: 4vw;
-  color: #000000;
+  font-size: 5vw;
+  color: #0a293d;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
 }
@@ -304,7 +267,6 @@ main .cartelera {
   grid-area: cartelera;
   background-image: url(../Imagenes/entrada.png);
   height: 35vh;
-  width: 99vw;
   margin-top: 20vh;
   margin-bottom: 20vh;
 }
@@ -325,13 +287,11 @@ main .cartelera P {
   margin-top: 8vh;
 }
 main .imagenUFC5 {
-  width: 99vw;
   grid-area: imagenUFC5;
   justify-self: center;
   margin-top: 20vh;
 }
 main .imagenUFC5 img {
-  width: 99vw;
   height: 35vh;
 }
 main .videos {
@@ -341,7 +301,7 @@ main .videos {
 main .parrafo-video {
   text-align: center;
   width: 40vw;
-  color: #191919;
+  color: #0a293d;
   font-size: 1vw;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -355,20 +315,17 @@ main .parrafo-video {
   gap: 4vw;
 }
 .productos1 img {
-  height: 40vh;
-}
-.productos1 .productos {
-  background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(255, 255, 255));
+  height: 30vh;
 }
 .productos1 .tituloProducto {
-  color: rgb(0, 0, 0);
+  color: #0a293d;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 1.7vw;
   font-weight: 700;
 }
 .productos1 .precio {
-  color: rgb(3, 35, 141);
+  color: #f1ad39;
   font-size: 1.5vw;
   text-align: center;
   font-weight: 900;
@@ -376,77 +333,118 @@ main .parrafo-video {
   letter-spacing: 0.1vw;
 }
 .productos1 .botonComprar {
-  margin-left: 5.5vw;
+  margin-left: 4.2vw;
   font-weight: 800;
-  color: rgb(0, 0, 0);
+  color: rgb(238, 238, 238);
 }
 
 .paginacion {
   margin-top: 10vh;
 }
-
-.seccion-nosotros {
-  margin: 5vw;
-}
-.seccion-nosotros .cartas div .div-carta h5 {
-  text-align: center;
-  font-size: 4vh;
-  color: rgb(0, 0, 0);
-  font-family: "Poppins", sans-serif;
-}
-.seccion-nosotros .cartas div .div-carta p {
-  font-family: "Poppins", sans-serif;
+.paginacion li a {
+  color: #0a293d;
 }
 
-.formulario {
-  margin: 10px 0px 10px 0px;
+.luchadores section {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.luchadores section img {
+  width: 35vw;
+}
+.luchadores section p {
   width: 50vw;
-  height: 90vh;
-  justify-self: center;
-  color: #ff0000;
-  background-color: rgb(5, 5, 5);
-  border-radius: 5%;
-  font-family: "Poppins", sans-serif;
-}
-.formulario .datos {
+  color: #0a293d;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.3vh;
   font-family: "Poppins", sans-serif;
+  font-weight: 1000;
+  margin-left: 4vw;
 }
-.formulario .botonEnviar {
-  transition: all 0.5s;
+.luchadores .contenedorPeleadores {
+  width: 99vw;
+}
+.luchadores .contenedorPeleadores .cartaPeleador {
+  width: 25vw;
+  margin-left: 4.5vw;
+}
+.luchadores .contenedorPeleadores .cartaPeleador .nombrePeleador {
+  color: #0a293d;
+  font-size: 4vh;
+  text-align: center;
   font-family: "Poppins", sans-serif;
+  font-weight: 1000;
 }
-.formulario .botonEnviar:hover {
-  transform: scale(1.1, 1.1);
+.luchadores .contenedorPeleadores .cartaPeleador .peso {
+  color: #f1ad39;
+  font-size: 2vh;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.luchadores .contenedorPeleadores .cartaPeleador p {
+  font-size: 2vh;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: black;
 }
 
-@media (max-width: 480px) {
-  .formulario {
-    margin: 10px 0px 10px 0px;
-    width: 90vw;
-    height: auto;
-    justify-self: center;
-    color: #ff0000;
-    background-color: rgb(5, 5, 5);
-    border-radius: 5%;
-    font-family: "Poppins", sans-serif;
-  }
-  .formulario .datos {
-    text-align: center;
-    font-size: 2rem;
-    font-family: "Poppins", sans-serif;
-  }
-  .formulario .botonEnviar {
-    margin-left: 35vw;
-    margin-bottom: 5vh;
-    margin-top: 2vh;
-    transition: all 0.5s;
-    font-family: "Poppins", sans-serif;
-  }
-  .formulario .botonEnviar:hover {
-    transform: scale(1.1, 1.1);
-  }
+.containerContacto {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "contacto contacto mapa" "contacto contacto mapa" "contacto contacto mapa";
+}
+
+.contacto {
+  grid-area: contacto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacto h4 {
+  font-size: 2vw;
+  color: #f1ad39;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 4vh;
+}
+.contacto p {
+  font-size: 1.7vw;
+  color: #0a293d;
+  font-family: "Poppins", sans-serif;
+}
+.contacto em {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.contacto .formulario {
+  width: 30vw;
+  font-family: "Poppins", sans-serif;
+}
+.contacto .formulario input {
+  font-size: 1.1vw;
+  font-family: "Poppins", sans-serif;
+}
+.contacto .formulario label {
+  font-size: 1.3vw;
+  font-family: "Poppins", sans-serif;
+  color: #0a293d;
+  font-weight: 700;
+}
+
+.mapa {
+  grid-area: mapa;
+  border: solid #f1ad39;
+  width: 32vw;
+  height: 50vh;
 }
 
 /*# sourceMappingURL=estilo.css.map */

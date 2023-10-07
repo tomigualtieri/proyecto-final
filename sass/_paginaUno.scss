@@ -1,7 +1,6 @@
 main {
     .container-index {
-        width: 99vw;
-        height: 550vh;
+        height: 650vh;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -22,15 +21,15 @@ main {
             "imagenUFC5 imagenUFC5 imagenUFC5 imagenUFC5";
     }
 
+
     .foto-principal {
         grid-area: foto-principal;
         background-image: url(../Imagenes/conor-mcgregor-dustin-poirier-ufc-264-07112021_107a23kefd2ko18fhzg0hwhtua.jpg);
-        width: 99vw;
         height: 100vh;
 
         .textoVegas {
-            color: rgba(255, 255, 255, 0.863);
-            font-size: 5vh;
+            color: $colorDetalles;
+            font-size: 4vh;
             font-weight: 700;
             text-align: center;
             margin-top: 30vh;
@@ -38,7 +37,7 @@ main {
         }
 
         .textoVencedor {
-            color: rgba(255, 255, 255, 0.863);
+            color: white;
             font-size: 10vh;
             font-weight: 900;
             text-align: center;
@@ -50,14 +49,14 @@ main {
             margin-top: 5vh;
             margin-left: 27vw;
             font-size: 4vh;
-            color: #ff0000;
+            color: $colorDetalles;
             font-family: $tipografiaParrafos;
         }
 
         .boton-verCombate {
             margin-top: 5vh;
             font-size: 4vh;
-            color: rgb(255, 0, 0);
+            color: $colorDetalles;
             font-family: $tipografiaParrafos;
 
         }
@@ -80,9 +79,9 @@ main {
 
         .nombre-peleadores {
             margin-top: 8vh;
-            font-size: 5vh;
+            font-size: 6vh;
             font-family: $tipografiaTitulo;
-            color: #191919;
+            color: $colorDetalles;
         }
     }
 
@@ -92,9 +91,9 @@ main {
 
         .nombre-peleadores {
             margin-top: 8vh;
-            font-size: 5vh;
+            font-size: 6vh;
             font-family: $tipografiaTitulo;
-            color: #191919;
+            color: $colorDetalles;
         }
     }
 
@@ -181,7 +180,7 @@ main {
 
         p {
             font-size: 4vw;
-            color: #191919;
+            color: $colorFondo;
             font-family: $tipografiaParrafos;
             font-weight: 900;
         }
@@ -204,7 +203,7 @@ main {
             font-size: 4vw;
             font-weight: 900;
             font-family: $tipografiaParrafos;
-            color: #191919;
+            color: $colorFondo;
         }
     }
 
@@ -217,8 +216,8 @@ main {
         margin-top: 10vh;
 
         p {
-            font-size: 4vw;
-            color: #000000;
+            font-size: 5vw;
+            color: $colorFondo;
             font-family: $tipografiaParrafos;
             font-weight: 900;
         }
@@ -250,7 +249,6 @@ main {
         grid-area: cartelera;
         background-image: url(../Imagenes/entrada.png);
         height: 35vh;
-        width: 99vw;
         margin-top: 20vh;
         margin-bottom: 20vh;
 
@@ -276,13 +274,11 @@ main {
     }
 
     .imagenUFC5 {
-        width: 99vw;
         grid-area: imagenUFC5;
         justify-self: center;
         margin-top: 20vh;
 
         img {
-            width: 99vw;
             height: 35vh;
         }
     }
@@ -296,9 +292,9 @@ main {
     .parrafo-video {
         text-align: center;
         width: 40vw;
-        color: #191919;
+        color: $colorFondo;
         font-size: 1vw;
         font-weight: 600;
-        font-family: $tipografiaParrafos;
+        font-family: $tipografiaTextos;
     }
 }
