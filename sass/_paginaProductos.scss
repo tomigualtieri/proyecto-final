@@ -43,3 +43,55 @@
     }
 
 }
+
+@media screen and (max-width: 414px) {
+    .productos1 {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4vw;
+
+        img {
+            height: 30vh;
+        }
+
+        .tituloProducto {
+            color: $colorFondo;
+            text-align: center;
+            font-family: $tipografiaTextos;
+            font-size: 7vw;
+            font-weight: 700;
+        }
+
+        .precio {
+            color: $colorDetalles;
+            font-size: 7vw;
+            text-align: center;
+            font-weight: 900;
+            font-family: $tipografiaTextos;
+            letter-spacing: 0.1vw;
+        }
+
+        .botonComprar {
+            margin-left: 20vw;
+            font-weight: 800;
+            color: rgb(238, 238, 238);
+        }
+    }
+
+    .paginacion {
+        margin-top: 10vh;
+
+        li {
+            a {
+                color: $colorFondo;
+            }
+        }
+
+    }
+
+
+
+}

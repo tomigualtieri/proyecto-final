@@ -30,3 +30,40 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+@media screen and (max-width: 414px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    body {
+        background-color: #ffffff;
+
+        hr {
+            color: #000000;
+        }
+
+    }
+
+    .contenedor-body {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr 0.8fr;
+        grid-template-rows: 0.4fr 2.3fr 0.3fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "footer footer footer";
+    }
+
+    .error404 {
+        margin-top: 25vh;
+        width: 100vw;
+        height: 40vh;
+    }
+
+}

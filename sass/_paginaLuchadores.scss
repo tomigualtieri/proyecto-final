@@ -55,3 +55,66 @@
         }
     }
 }
+
+@media screen and (max-width: 414px) {
+
+    .luchadores {
+        section {
+            margin-top: 5vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+
+            img {
+                display: none;
+            }
+
+            p {
+                width: 100vw;
+                color: $colorFondo;
+                text-align: center;
+                font-size: 2.3vh;
+                font-family: $tipografiaTextos;
+                font-weight: 1000;
+                margin-left: 0vw;
+            }
+        }
+
+        .contenedorPeleadores {
+            width: 100vw;
+
+            .cartaPeleador {
+                width: 100vw;
+                margin-left: 0vw;
+
+                .nombrePeleador {
+                    color: $colorFondo;
+                    font-size: 4vh;
+                    text-align: center;
+                    font-family: $tipografiaTextos;
+                    font-weight: 1000;
+
+                }
+
+                .peso {
+                    color: $colorDetalles ;
+                    font-size: 2vh;
+                    text-align: center;
+                    font-family: $tipografiaTextos;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-size: 2vh;
+                    text-align: center;
+                    font-family: $tipografiaTextos;
+                    font-weight: 700;
+                    color: black;
+                }
+            }
+        }
+    }
+
+
+}

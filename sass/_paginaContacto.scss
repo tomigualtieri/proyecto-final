@@ -56,8 +56,88 @@
 
 .mapa {
   grid-area: mapa;
-  border: solid $colorDetalles;
-  width: 32vw;
-  height: 50vh;
 
+  .mapaTamano {
+    width: 40vw;
+    height: 65vh;
+  }
+
+  border: solid $colorDetalles;
+  width: auto;
+  height: 66vh;
+  margin-right: 5vw;
+
+}
+
+@media screen and (max-width: 414px) {
+
+  .containerContacto {
+    height: 110vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "contacto contacto contacto"
+      "mapa mapa mapa"
+  }
+
+  .contacto {
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h4 {
+      font-size: 6vw;
+      color: $colorDetalles;
+      font-family: $tipografiaTextos;
+      font-weight: 600;
+      margin-bottom: 2vh;
+    }
+
+    p {
+      font-size: 5.5vw;
+      color: $colorFondo;
+      font-family: $tipografiaTextos ;
+    }
+
+    em {
+      font-weight: 700;
+      font-family: $tipografiaTextos ;
+    }
+
+    .formulario {
+      width: 55vw;
+      font-family: $tipografiaTextos ;
+
+      input {
+        font-size: 4vw;
+        font-family: $tipografiaTextos ;
+      }
+
+      label {
+        font-size: 5vw;
+        font-family: $tipografiaTextos ;
+        color: $colorFondo;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .mapa {
+    grid-area: mapa;
+
+    .mapaTamano {
+      width: 90vw;
+      height: 30vh;
+    }
+
+    border:none;
+    width: auto;
+    height: 66vh;
+    margin-left: 4vw;
+
+  }
 }

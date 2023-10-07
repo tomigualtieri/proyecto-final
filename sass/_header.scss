@@ -30,3 +30,39 @@ header {
 
     }
 }
+
+@media screen and (max-width: 414px) {
+    header {
+        margin-bottom: 4vh;
+
+        .barraDeNavegacion {
+            background-color: $colorFondo;
+        }
+
+        .tituloCaiman {
+            font-family: $tipografiaTitulo;
+            font-size: 3vh;
+            color: #f1ad39;
+            margin-left: 2vw;
+        }
+    }
+
+    .main {
+        display: grid;
+        grid-area: main;
+        height: auto;
+
+        .seccion {
+            font-size: 5vh;
+            color: $colorFondo;
+            font-family: $tipografiaTextos;
+            text-align: start;
+            margin-top: 5vh;
+            margin-left: 4vw;
+            margin-bottom: 3vh;
+            font-weight: 900;
+
+        }
+    }
+
+}

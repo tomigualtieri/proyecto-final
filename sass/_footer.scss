@@ -23,3 +23,29 @@
     }
 
 }
+
+@media screen and (max-width: 414px) {
+
+    .footer {
+        display: flex;
+        grid-area: footer;
+        justify-content: center;
+        align-items: center;
+
+        .pie {
+            color: $colorFondo;
+            align-content: center;
+            font-size: 3vw;
+            font-family: $tipografiaTextos;
+            font-weight: 900;
+        }
+
+        .logos {
+            .redes-logos {
+                display: none;
+            }
+        }
+
+    }
+
+}

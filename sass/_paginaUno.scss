@@ -298,3 +298,291 @@ main {
         font-family: $tipografiaTextos;
     }
 }
+
+
+@media screen and (max-width: 414px) {
+    main {
+        .container-index {
+            height: 450vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "foto-principal foto-principal"
+                "parrafo1 parrafo1"
+                "textopelea1 textopelea2"
+                "fotopelea12 fotopelea12"
+                "parrafo2 parrafo2"
+                "fotopelea1 fotopelea2"
+                "gif1 gif1"
+                "fotopelea3 fotopelea4"
+                "cartelera cartelera"
+                "cartelera cartelera"
+                "parrafo3 parrafo3"
+                "uno uno"
+                "dos dos"
+                "tres tres"
+                "cuatro cuatro"
+                "imagenUFC5 imagenUFC5";
+        }
+
+
+        .foto-principal {
+            grid-area: foto-principal;
+            background-image: url(https://images2.minutemediacdn.com/image/upload/c_crop,w_3359,h_1889,x_788,y_99/c_fill,w_1440,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/12up_es_international_web/01gtm0yre48vgcyqmp86.jpg);
+            width: 100vw;
+            height: 50vh;
+
+            .textoVegas {
+                color: $colorDetalles;
+                font-size: 3vh;
+                font-weight: 700;
+                text-align: center;
+                margin-top: 4vh;
+                font-family: $tipografiaParrafos;
+            }
+
+            .textoVencedor {
+                color: white;
+                font-size: 4vh;
+                font-weight: 900;
+                text-align: center;
+                font-family: $tipografiaParrafos;
+
+            }
+
+            .boton-verPelea {
+                margin-top: 3vh;
+                margin-left: 12vw;
+                font-size: 3vh;
+                color: $colorDetalles;
+                font-family: $tipografiaParrafos;
+            }
+
+            .boton-verCombate {
+                margin-top: 4vh;
+                font-size: 3vh;
+                margin-left: 13.4vw;
+                color: $colorDetalles;
+                font-family: $tipografiaParrafos;
+
+            }
+
+
+        }
+
+        .fotopelea12 {
+            grid-area: fotopelea12;
+            justify-self: start;
+
+            img {
+                width: 49vw;
+            }
+        }
+
+        .textopelea1 {
+            display: none;
+        }
+
+        .textopelea2 {
+            display: none;
+        }
+
+        .fotopelea1 {
+            grid-area: fotopelea1;
+            justify-self: center;
+            margin-left: 15vw;
+
+            img {
+                width: 60vw;
+                transition: all 0.3s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+        }
+
+        .fotopelea2 {
+            display: none;
+        }
+
+        .fotopelea3 {
+            grid-area: fotopelea3;
+            justify-self: start;
+            margin-bottom: 9vh;
+
+            img {
+                margin-left: 15vw;
+                width: 70vw;
+                transition: all 0.3s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .fotopelea4 {
+            display: none;
+        }
+
+
+        .gif1 {
+            grid-area: gif1;
+            justify-self: start;
+            margin-left: 10vw;
+            margin-top: 4vh;
+            margin-bottom: 4vh;
+
+            img {
+                width: 80vw;
+                transition: all 0.3s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+        }
+
+
+        .parrafo3 {
+            grid-area: parrafo3;
+            text-align: center;
+            width: 100vw;
+
+            p {
+                font-size: 6vw;
+                color: $colorFondo;
+                font-family: $tipografiaParrafos;
+                font-weight: 900;
+            }
+        }
+
+        .parrafo2 {
+            width: 100vw;
+            margin-top: 0vh;
+            margin-right: 0vw;
+            grid-area: parrafo2;
+            text-align: center;
+            margin-bottom: 0vh;
+
+            .tendenciasParrafo {
+                font-size: 5vw;
+                color: red;
+                font-family: $tipografiaParrafos;
+                font-weight: 800;
+            }
+
+            .videos-articulos-galeriaParrafo {
+                text-align: center;
+                font-size: 5vw;
+                font-weight: 900;
+                font-family: $tipografiaParrafos;
+                color: $colorFondo;
+            }
+        }
+
+        .parrafo1 {
+            grid-area: parrafo1;
+            height: auto;
+            width: 70vw;
+            margin-left: 15vw;
+            text-align: center;
+            margin-top: 2vh;
+
+            p {
+                font-size: 7vw;
+                color: $colorFondo;
+                font-family: $tipografiaParrafos;
+                font-weight: 900;
+            }
+        }
+
+        .uno {
+            grid-area: uno;
+            justify-self: start;
+        }
+
+        .dos {
+            grid-area: dos;
+            justify-self: start;
+        }
+
+        .tres {
+            grid-area: tres;
+            justify-self: start;
+        }
+
+        .cuatro {
+            grid-area: cuatro;
+            justify-self: start;
+        }
+
+        .cartelera {
+            display: flex;
+            justify-content: space-between;
+            grid-area: cartelera;
+            background-image: url(../Imagenes/entrada.png);
+            width: 100vw;
+            height: 30vh;
+            margin-top: 0vh;
+            margin-bottom: 0vh;
+
+            img {
+                width: 80vw;
+                height: 20vh;
+                margin-top: 5vh;
+                margin-left: 10vw;
+                margin-right: 0vw;
+                transition: all 0.3s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+            }
+
+            P {
+                display: none;
+            }
+        }
+
+        .imagenUFC5 {
+            grid-area: imagenUFC5;
+            justify-self: start;
+            margin-top: 0vh;
+
+            img {
+                width: 100vw;
+                height: 30vw;
+            }
+        }
+
+        .videos {
+            width: 90vw;
+            height: 30vh;
+            margin-left: 5vw;
+
+        }
+
+        .parrafo-video {
+            text-align: center;
+            width: 80vw;
+            color: $colorFondo;
+            font-size: 5vw;
+            font-weight: 600;
+            font-family: $tipografiaTextos;
+            margin-left: 10vw;
+        }
+    }
+
+
+
+
+
+}
